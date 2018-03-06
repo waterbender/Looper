@@ -20,11 +20,18 @@ class ViewController: ExpandingViewController {
     
     override func viewDidLoad() {
         
-        
-        itemSize = CGSize(width: view.frame.width, height: view.frame.height-70) //IMPORTANT!!! Height of open state cell
+        itemSize = CGSize(width: view.frame.width, height: view.frame.height-120) //IMPORTANT!!! Height of open state cell
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         registerCell()
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.title = "Choose you Social"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,7 +72,6 @@ extension ViewController {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier:"FirstInitCollectionViewCellIdentifier", for: indexPath) as! FirstInitCollectionViewCell
         let type = items.object(at: indexPath.row) as! String
-        
         cell.loginButton.rx.tap.asDriver()
             .drive(onNext: { [weak self] in
                 

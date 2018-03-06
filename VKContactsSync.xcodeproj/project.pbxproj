@@ -21,6 +21,9 @@
 		EF1A6197204F1AE60081EE95 /* FriendListViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A6196204F1AE60081EE95 /* FriendListViewConroller.swift */; };
 		EF1A6198204F1AE60081EE95 /* FriendListViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A6196204F1AE60081EE95 /* FriendListViewConroller.swift */; };
 		EF1A6199204F1AE60081EE95 /* FriendListViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A6196204F1AE60081EE95 /* FriendListViewConroller.swift */; };
+		EF1A619B204F34170081EE95 /* VKViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A619A204F34170081EE95 /* VKViewModel.swift */; };
+		EF1A619C204F34170081EE95 /* VKViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A619A204F34170081EE95 /* VKViewModel.swift */; };
+		EF1A619D204F34170081EE95 /* VKViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A619A204F34170081EE95 /* VKViewModel.swift */; };
 		EF234A362046E50500D3280A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF234A352046E50500D3280A /* AppDelegate.swift */; };
 		EF234A3B2046E50500D3280A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF234A392046E50500D3280A /* Main.storyboard */; };
 		EF234A3E2046E50500D3280A /* VKContactsSync.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF234A3C2046E50500D3280A /* VKContactsSync.xcdatamodeld */; };
@@ -82,6 +85,7 @@
 		EF0524C4204E12C800F1EB7F /* LauncherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherModel.swift; sourceTree = "<group>"; };
 		EF0524C8204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithSiteViewContoller.swift; sourceTree = "<group>"; };
 		EF1A6196204F1AE60081EE95 /* FriendListViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListViewConroller.swift; sourceTree = "<group>"; };
+		EF1A619A204F34170081EE95 /* VKViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKViewModel.swift; sourceTree = "<group>"; };
 		EF234A322046E50500D3280A /* VKContactsSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKContactsSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF234A352046E50500D3280A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF234A3A2046E50500D3280A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				EF0524C4204E12C800F1EB7F /* LauncherModel.swift */,
+				EF1A619A204F34170081EE95 /* VKViewModel.swift */,
 			);
 			name = ViewModel;
 			path = "New Group";
@@ -609,6 +614,7 @@
 				EF234A3E2046E50500D3280A /* VKContactsSync.xcdatamodeld in Sources */,
 				EF4ADE55204DB829002443FD /* ViewController.swift in Sources */,
 				EF234A362046E50500D3280A /* AppDelegate.swift in Sources */,
+				EF1A619B204F34170081EE95 /* VKViewModel.swift in Sources */,
 				EFB6FFF2204ECA350050324E /* VKontakteSynchronizer.swift in Sources */,
 				EFB6FFF8204EE63F0050324E /* UserDataObject.swift in Sources */,
 				EF1A6197204F1AE60081EE95 /* FriendListViewConroller.swift in Sources */,
@@ -624,6 +630,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFB6FFEF204EC34F0050324E /* ClientInfoObject.swift in Sources */,
+				EF1A619C204F34170081EE95 /* VKViewModel.swift in Sources */,
 				EF1A6198204F1AE60081EE95 /* FriendListViewConroller.swift in Sources */,
 				EF234A4E2046E50500D3280A /* VKContactsSyncTests.swift in Sources */,
 				EFB6FFF5204ECACD0050324E /* WebClient.swift in Sources */,
@@ -642,6 +649,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFB6FFF0204EC34F0050324E /* ClientInfoObject.swift in Sources */,
+				EF1A619D204F34170081EE95 /* VKViewModel.swift in Sources */,
 				EF1A6199204F1AE60081EE95 /* FriendListViewConroller.swift in Sources */,
 				EF234A592046E50500D3280A /* VKContactsSyncUITests.swift in Sources */,
 				EFB6FFF6204ECACE0050324E /* WebClient.swift in Sources */,

@@ -29,10 +29,12 @@ class FriendListViewConroller: UIViewController {
         firendListTableView.dg_setPullToRefreshBackgroundColor(firendListTableView.backgroundColor!)
         
         // set navigations
-        navigationItem.largeTitleDisplayMode = .always
-        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.title = "Friends"
         // Do any additional setup after loading the view.
         
+        let vkModel = VKViewModel()
+        arrayOfUsers = vkModel.getUsers
     }
 
     override func didReceiveMemoryWarning() {

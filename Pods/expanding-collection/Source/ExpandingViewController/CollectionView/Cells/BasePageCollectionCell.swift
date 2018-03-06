@@ -150,10 +150,10 @@ extension BasePageCollectionCell {
 
     fileprivate func configurationViews() {
         backContainerView.layer.masksToBounds = true
-        backContainerView.layer.cornerRadius = 5
+        backContainerView.layer.cornerRadius = 0
 
         frontContainerView.layer.masksToBounds = true
-        frontContainerView.layer.cornerRadius = 5
+        frontContainerView.layer.cornerRadius = 0
 
         contentView.layer.masksToBounds = false
         layer.masksToBounds = false
