@@ -24,10 +24,26 @@ struct LauncherModel {
     }
     
     func getTypeWithSegueue(segueueType: String) -> String {
+        
         if segueueType==Constants.segueLoginIdentifier {
             return Constants.TYPE_VKONTAKTE
         } else {
             return Constants.TYPE_FACEBOOK
+        }
+    }
+    
+    func getSegueueIdentifier(withType type: String) -> String {
+        
+        if (type==Constants.TYPE_VKONTAKTE) {
+            let manager = CoreDataManager()
+            if (manager.checkExistanceOfType(type: type)) {
+                return Constants.segueFriendsListIdentifier
+            } else {
+                return Constants.segueLoginIdentifier
+            }
+            
+        } else {
+            return Constants.segueLoginIdentifier
         }
     }
     

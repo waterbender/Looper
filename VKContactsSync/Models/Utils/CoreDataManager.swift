@@ -30,7 +30,6 @@ struct CoreDataManager {
                     return
             }
             
-            
             let entity = NSEntityDescription.entity(forEntityName: "ClientInfoObject",
                                            in: managedContext)!
             let clientInfo = ClientInfoObject(entity: entity,
@@ -57,6 +56,29 @@ struct CoreDataManager {
 //
 //
 //        save(context: managedContext);
+    }
+    
+    func checkExistanceOfType(type: String) -> Bool {
+        
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "ClientInfoObject")
+        fetchRequest.predicate = NSPredicate(format: "typeOfRequest = %@", type)
+        
+        if let managedContext = mainManagedObjectContext() {
+            
+            // if is object stop
+            var count = 0
+            do {
+                count = try managedContext.count(for: fetchRequest)
+                if (count != 0) {
+                    return true
+                }
+            } catch let error as NSError {
+                print("Error: \(error.localizedDescription)")
+                return false
+            }
+        }
+        
+        return false
     }
     
     private func mainManagedObjectContext() -> NSManagedObjectContext? {

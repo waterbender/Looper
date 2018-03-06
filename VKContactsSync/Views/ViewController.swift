@@ -64,13 +64,15 @@ extension ViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier:"FirstInitCollectionViewCellIdentifier", for: indexPath) as! FirstInitCollectionViewCell
+        let type = items.object(at: indexPath.row) as! String
         
         cell.loginButton.rx.tap.asDriver()
             .drive(onNext: { [weak self] in
-                // code that has to be handled by view controller
-                print(Thread.current)
                 
-                self?.performSegue(withIdentifier: Constants.segueLoginIdentifier, sender: cell)
+                let model = LauncherModel()
+                let identifier = model.getSegueueIdentifier(withType: type)
+                self?.performSegue(withIdentifier: identifier, sender: cell)
+        
             }).disposed(by: cell.bag)
 
         
@@ -81,9 +83,11 @@ extension ViewController {
 extension ViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let launch = LauncherModel()
-        let type = launch.getTypeWithSegueue(segueueType: segue.identifier!)
-        let destanLogin = segue.destination as! LoginWithSiteViewContoller
-        destanLogin.url = launch.getLoginUrl(type: type)
+        if (segue.destination is LoginWithSiteViewContoller) {
+            let launch = LauncherModel()
+            let type = launch.getTypeWithSegueue(segueueType: segue.identifier!)
+            let destanLogin = segue.destination as! LoginWithSiteViewContoller
+            destanLogin.url = launch.getLoginUrl(type: type)
+        }
     }
 }

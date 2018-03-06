@@ -41,6 +41,7 @@
                     <navigationItem key="navigationItem" id="ydI-vH-65J"/>
                     <connections>
                         <segue destination="Bzs-TE-s1W" kind="presentation" identifier="AuthorizationVkSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="flipHorizontal" id="L8g-YZ-ElG"/>
+                        <segue destination="WK4-fR-jVI" kind="show" identifier="FriendsListSegueue" id="iIA-lK-Vx5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cu4-VM-DzB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -99,7 +100,51 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MPg-xK-icz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968.79999999999995" y="115.59220389805098"/>
+            <point key="canvasLocation" x="265" y="-573"/>
+        </scene>
+        <!--Friend List View Conroller-->
+        <scene sceneID="jo0-YN-fgH">
+            <objects>
+                <viewController storyboardIdentifier="FriendListViewConroller" id="WK4-fR-jVI" customClass="FriendListViewConroller" customModule="VKContactsSync" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TgD-pI-aH9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JtL-7Q-vjj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendReusableCellIdentifier" id="KSF-rJ-Fhv">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KSF-rJ-Fhv" id="ggu-Sk-S3e">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="WK4-fR-jVI" id="jOA-wT-tO6"/>
+                                    <outlet property="delegate" destination="WK4-fR-jVI" id="5U3-mb-mDk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JtL-7Q-vjj" firstAttribute="trailing" secondItem="p4c-Vw-vLf" secondAttribute="trailing" id="3qY-UK-8F5"/>
+                            <constraint firstItem="JtL-7Q-vjj" firstAttribute="top" secondItem="p4c-Vw-vLf" secondAttribute="top" id="Y3X-XW-ft5"/>
+                            <constraint firstItem="JtL-7Q-vjj" firstAttribute="leading" secondItem="p4c-Vw-vLf" secondAttribute="leading" id="l99-BY-CEa"/>
+                            <constraint firstItem="JtL-7Q-vjj" firstAttribute="bottom" secondItem="p4c-Vw-vLf" secondAttribute="bottom" id="yVi-DG-H9W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p4c-Vw-vLf"/>
+                    </view>
+                    <connections>
+                        <outlet property="firendListTableView" destination="JtL-7Q-vjj" id="5zG-Ar-2nH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fyl-pS-Y3k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="115.59220389805098"/>
         </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

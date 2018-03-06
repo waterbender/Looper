@@ -23,7 +23,7 @@ class Constants {
     // segueues type
     // ViewController
     static let segueLoginIdentifier = "AuthorizationVkSegue"
-    
+    static let segueFriendsListIdentifier = "FriendsListSegueue"
     
     // VK Settings
     static let VKClientID = "6390042"
