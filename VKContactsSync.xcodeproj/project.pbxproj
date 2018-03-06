@@ -1,0 +1,953 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D800202BFC41BA0C2B909CD /* Pods_VKContactsSyncUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB1C76D66066B112154BFB1 /* Pods_VKContactsSyncUITests.framework */; };
+		312D030F66363E594C2E7993 /* Pods_VKContactsSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB1A0EDA22AE5EF75CE4F37 /* Pods_VKContactsSync.framework */; };
+		E53A2C506345842D32C2F553 /* Pods_VKContactsSyncTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2183E1C3545EF4B086B85F1F /* Pods_VKContactsSyncTests.framework */; };
+		EF0524C5204E12C800F1EB7F /* LauncherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0524C4204E12C800F1EB7F /* LauncherModel.swift */; };
+		EF0524C6204E12C800F1EB7F /* LauncherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0524C4204E12C800F1EB7F /* LauncherModel.swift */; };
+		EF0524C7204E12C800F1EB7F /* LauncherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0524C4204E12C800F1EB7F /* LauncherModel.swift */; };
+		EF0524C9204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0524C8204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift */; };
+		EF0524CA204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0524C8204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift */; };
+		EF0524CB204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0524C8204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift */; };
+		EF0524CC204E211D00F1EB7F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF307CD2204DFD4E005A30CA /* Constants.swift */; };
+		EF0524CD204E211E00F1EB7F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF307CD2204DFD4E005A30CA /* Constants.swift */; };
+		EF234A362046E50500D3280A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF234A352046E50500D3280A /* AppDelegate.swift */; };
+		EF234A3B2046E50500D3280A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF234A392046E50500D3280A /* Main.storyboard */; };
+		EF234A3E2046E50500D3280A /* VKContactsSync.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF234A3C2046E50500D3280A /* VKContactsSync.xcdatamodeld */; };
+		EF234A402046E50500D3280A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF234A3F2046E50500D3280A /* Assets.xcassets */; };
+		EF234A432046E50500D3280A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF234A412046E50500D3280A /* LaunchScreen.storyboard */; };
+		EF234A4E2046E50500D3280A /* VKContactsSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF234A4D2046E50500D3280A /* VKContactsSyncTests.swift */; };
+		EF234A592046E50500D3280A /* VKContactsSyncUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF234A582046E50500D3280A /* VKContactsSyncUITests.swift */; };
+		EF307CD3204DFD4E005A30CA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF307CD2204DFD4E005A30CA /* Constants.swift */; };
+		EF4ADE54204DB829002443FD /* OriginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4ADE4F204DB829002443FD /* OriginTableViewController.swift */; };
+		EF4ADE55204DB829002443FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4ADE50204DB829002443FD /* ViewController.swift */; };
+		EF4ADE56204DB829002443FD /* FirstInitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4ADE52204DB829002443FD /* FirstInitCollectionViewCell.swift */; };
+		EF4ADE57204DB829002443FD /* FirstInitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF4ADE53204DB829002443FD /* FirstInitCollectionViewCell.xib */; };
+		EF4ADE5B204DBA04002443FD /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4ADE5A204DBA04002443FD /* WebClient.swift */; };
+		EF5352C9204EB55700931711 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5352C8204EB55700931711 /* CoreDataManager.swift */; };
+		EFB6FFD8204EB9CB0050324E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5352C8204EB55700931711 /* CoreDataManager.swift */; };
+		EFB6FFD9204EB9CB0050324E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5352C8204EB55700931711 /* CoreDataManager.swift */; };
+		EFB6FFDC204EBAA10050324E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF234A352046E50500D3280A /* AppDelegate.swift */; };
+		EFB6FFDD204EBAA20050324E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF234A352046E50500D3280A /* AppDelegate.swift */; };
+		EFB6FFEE204EC34F0050324E /* ClientInfoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6FFED204EC34F0050324E /* ClientInfoObject.swift */; };
+		EFB6FFEF204EC34F0050324E /* ClientInfoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6FFED204EC34F0050324E /* ClientInfoObject.swift */; };
+		EFB6FFF0204EC34F0050324E /* ClientInfoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6FFED204EC34F0050324E /* ClientInfoObject.swift */; };
+		EFB6FFF2204ECA350050324E /* VKontakteSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6FFF1204ECA350050324E /* VKontakteSynchronizer.swift */; };
+		EFB6FFF3204ECA350050324E /* VKontakteSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6FFF1204ECA350050324E /* VKontakteSynchronizer.swift */; };
+		EFB6FFF4204ECA350050324E /* VKontakteSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6FFF1204ECA350050324E /* VKontakteSynchronizer.swift */; };
+		EFB6FFF5204ECACD0050324E /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4ADE5A204DBA04002443FD /* WebClient.swift */; };
+		EFB6FFF6204ECACE0050324E /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4ADE5A204DBA04002443FD /* WebClient.swift */; };
+		EFB6FFF8204EE63F0050324E /* UserDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6FFF7204EE63F0050324E /* UserDataObject.swift */; };
+		EFB6FFF9204EE63F0050324E /* UserDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6FFF7204EE63F0050324E /* UserDataObject.swift */; };
+		EFB6FFFA204EE63F0050324E /* UserDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6FFF7204EE63F0050324E /* UserDataObject.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF234A4A2046E50500D3280A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF234A2A2046E50500D3280A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF234A312046E50500D3280A;
+			remoteInfo = VKContactsSync;
+		};
+		EF234A552046E50500D3280A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF234A2A2046E50500D3280A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF234A312046E50500D3280A;
+			remoteInfo = VKContactsSync;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FB1A0EDA22AE5EF75CE4F37 /* Pods_VKContactsSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKContactsSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FFD70EBF2CFD865A9704D9F /* Pods-VKContactsSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKContactsSync.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKContactsSync/Pods-VKContactsSync.debug.xcconfig"; sourceTree = "<group>"; };
+		16BE3294D6D0B404DF2F2FB8 /* Pods-VKContactsSyncTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKContactsSyncTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKContactsSyncTests/Pods-VKContactsSyncTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2183E1C3545EF4B086B85F1F /* Pods_VKContactsSyncTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKContactsSyncTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29E25CE499C29A1FBECFA63E /* Pods-VKContactsSyncTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKContactsSyncTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VKContactsSyncTests/Pods-VKContactsSyncTests.release.xcconfig"; sourceTree = "<group>"; };
+		37CDEE909A9D63BC2953B0F8 /* Pods-VKContactsSync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKContactsSync.release.xcconfig"; path = "Pods/Target Support Files/Pods-VKContactsSync/Pods-VKContactsSync.release.xcconfig"; sourceTree = "<group>"; };
+		7BB1C76D66066B112154BFB1 /* Pods_VKContactsSyncUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKContactsSyncUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA016FB5DFB4A5742996A37C /* Pods-VKContactsSyncUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKContactsSyncUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKContactsSyncUITests/Pods-VKContactsSyncUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EDB84726140C305EE6C8FAC4 /* Pods-VKContactsSyncUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKContactsSyncUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VKContactsSyncUITests/Pods-VKContactsSyncUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EF0524C4204E12C800F1EB7F /* LauncherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherModel.swift; sourceTree = "<group>"; };
+		EF0524C8204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithSiteViewContoller.swift; sourceTree = "<group>"; };
+		EF234A322046E50500D3280A /* VKContactsSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKContactsSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF234A352046E50500D3280A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF234A3A2046E50500D3280A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF234A3D2046E50500D3280A /* VKContactsSync.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VKContactsSync.xcdatamodel; sourceTree = "<group>"; };
+		EF234A3F2046E50500D3280A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF234A422046E50500D3280A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF234A442046E50500D3280A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF234A492046E50500D3280A /* VKContactsSyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VKContactsSyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF234A4D2046E50500D3280A /* VKContactsSyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKContactsSyncTests.swift; sourceTree = "<group>"; };
+		EF234A4F2046E50500D3280A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF234A542046E50500D3280A /* VKContactsSyncUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VKContactsSyncUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF234A582046E50500D3280A /* VKContactsSyncUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKContactsSyncUITests.swift; sourceTree = "<group>"; };
+		EF234A5A2046E50500D3280A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF307CD2204DFD4E005A30CA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EF4ADE4F204DB829002443FD /* OriginTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginTableViewController.swift; sourceTree = "<group>"; };
+		EF4ADE50204DB829002443FD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF4ADE52204DB829002443FD /* FirstInitCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstInitCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF4ADE53204DB829002443FD /* FirstInitCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstInitCollectionViewCell.xib; sourceTree = "<group>"; };
+		EF4ADE5A204DBA04002443FD /* WebClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClient.swift; sourceTree = "<group>"; };
+		EF5352C8204EB55700931711 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		EFB6FFED204EC34F0050324E /* ClientInfoObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientInfoObject.swift; sourceTree = "<group>"; };
+		EFB6FFF1204ECA350050324E /* VKontakteSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKontakteSynchronizer.swift; sourceTree = "<group>"; };
+		EFB6FFF7204EE63F0050324E /* UserDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataObject.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF234A2F2046E50500D3280A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				312D030F66363E594C2E7993 /* Pods_VKContactsSync.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF234A462046E50500D3280A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53A2C506345842D32C2F553 /* Pods_VKContactsSyncTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF234A512046E50500D3280A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D800202BFC41BA0C2B909CD /* Pods_VKContactsSyncUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2809C80634692BBBB3B4A20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FFD70EBF2CFD865A9704D9F /* Pods-VKContactsSync.debug.xcconfig */,
+				37CDEE909A9D63BC2953B0F8 /* Pods-VKContactsSync.release.xcconfig */,
+				16BE3294D6D0B404DF2F2FB8 /* Pods-VKContactsSyncTests.debug.xcconfig */,
+				29E25CE499C29A1FBECFA63E /* Pods-VKContactsSyncTests.release.xcconfig */,
+				AA016FB5DFB4A5742996A37C /* Pods-VKContactsSyncUITests.debug.xcconfig */,
+				EDB84726140C305EE6C8FAC4 /* Pods-VKContactsSyncUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF0524C3204E129600F1EB7F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF0524C4204E12C800F1EB7F /* LauncherModel.swift */,
+			);
+			name = ViewModel;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		EF234A292046E50500D3280A = {
+			isa = PBXGroup;
+			children = (
+				EF234A342046E50500D3280A /* VKContactsSync */,
+				EF234A4C2046E50500D3280A /* VKContactsSyncTests */,
+				EF234A572046E50500D3280A /* VKContactsSyncUITests */,
+				EF234A332046E50500D3280A /* Products */,
+				B2809C80634692BBBB3B4A20 /* Pods */,
+				FC5B7EA74CA7E8DBF94F1BF2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF234A332046E50500D3280A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF234A322046E50500D3280A /* VKContactsSync.app */,
+				EF234A492046E50500D3280A /* VKContactsSyncTests.xctest */,
+				EF234A542046E50500D3280A /* VKContactsSyncUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF234A342046E50500D3280A /* VKContactsSync */ = {
+			isa = PBXGroup;
+			children = (
+				EF4ADE4D204DB829002443FD /* Views */,
+				EF4ADE58204DB84C002443FD /* Models */,
+				EF0524C3204E129600F1EB7F /* ViewModel */,
+				EF234A352046E50500D3280A /* AppDelegate.swift */,
+				EF234A392046E50500D3280A /* Main.storyboard */,
+				EF234A3F2046E50500D3280A /* Assets.xcassets */,
+				EF234A412046E50500D3280A /* LaunchScreen.storyboard */,
+				EF234A442046E50500D3280A /* Info.plist */,
+				EF234A3C2046E50500D3280A /* VKContactsSync.xcdatamodeld */,
+			);
+			path = VKContactsSync;
+			sourceTree = "<group>";
+		};
+		EF234A4C2046E50500D3280A /* VKContactsSyncTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF234A4D2046E50500D3280A /* VKContactsSyncTests.swift */,
+				EF234A4F2046E50500D3280A /* Info.plist */,
+			);
+			path = VKContactsSyncTests;
+			sourceTree = "<group>";
+		};
+		EF234A572046E50500D3280A /* VKContactsSyncUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF234A582046E50500D3280A /* VKContactsSyncUITests.swift */,
+				EF234A5A2046E50500D3280A /* Info.plist */,
+			);
+			path = VKContactsSyncUITests;
+			sourceTree = "<group>";
+		};
+		EF4ADE4D204DB829002443FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF4ADE4F204DB829002443FD /* OriginTableViewController.swift */,
+				EF4ADE50204DB829002443FD /* ViewController.swift */,
+				EF0524C8204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift */,
+				EF4ADE51204DB829002443FD /* Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF4ADE51204DB829002443FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF4ADE52204DB829002443FD /* FirstInitCollectionViewCell.swift */,
+				EF4ADE53204DB829002443FD /* FirstInitCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF4ADE58204DB84C002443FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF5352C6204EB51900931711 /* Utils */,
+				EF5352C7204EB52400931711 /* Classes */,
+				EF307CD2204DFD4E005A30CA /* Constants.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF5352C6204EB51900931711 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EF4ADE5A204DBA04002443FD /* WebClient.swift */,
+				EF5352C8204EB55700931711 /* CoreDataManager.swift */,
+				EFB6FFF1204ECA350050324E /* VKontakteSynchronizer.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EF5352C7204EB52400931711 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EFB6FFED204EC34F0050324E /* ClientInfoObject.swift */,
+				EFB6FFF7204EE63F0050324E /* UserDataObject.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FC5B7EA74CA7E8DBF94F1BF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FB1A0EDA22AE5EF75CE4F37 /* Pods_VKContactsSync.framework */,
+				2183E1C3545EF4B086B85F1F /* Pods_VKContactsSyncTests.framework */,
+				7BB1C76D66066B112154BFB1 /* Pods_VKContactsSyncUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF234A312046E50500D3280A /* VKContactsSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF234A5D2046E50500D3280A /* Build configuration list for PBXNativeTarget "VKContactsSync" */;
+			buildPhases = (
+				29DC1D19AA1250DD154E748A /* [CP] Check Pods Manifest.lock */,
+				EF234A2E2046E50500D3280A /* Sources */,
+				EF234A2F2046E50500D3280A /* Frameworks */,
+				EF234A302046E50500D3280A /* Resources */,
+				D7FD72BC7C99DEFD9AFA88E3 /* [CP] Embed Pods Frameworks */,
+				0EB8C34D8D0AA6D12FBC3A97 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VKContactsSync;
+			productName = VKContactsSync;
+			productReference = EF234A322046E50500D3280A /* VKContactsSync.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF234A482046E50500D3280A /* VKContactsSyncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF234A602046E50500D3280A /* Build configuration list for PBXNativeTarget "VKContactsSyncTests" */;
+			buildPhases = (
+				6B5E08B7310B9F5AEE069120 /* [CP] Check Pods Manifest.lock */,
+				EF234A452046E50500D3280A /* Sources */,
+				EF234A462046E50500D3280A /* Frameworks */,
+				EF234A472046E50500D3280A /* Resources */,
+				49F289561587CD88B8290802 /* [CP] Embed Pods Frameworks */,
+				0A85FF1C27414FBF589CD504 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF234A4B2046E50500D3280A /* PBXTargetDependency */,
+			);
+			name = VKContactsSyncTests;
+			productName = VKContactsSyncTests;
+			productReference = EF234A492046E50500D3280A /* VKContactsSyncTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF234A532046E50500D3280A /* VKContactsSyncUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF234A632046E50500D3280A /* Build configuration list for PBXNativeTarget "VKContactsSyncUITests" */;
+			buildPhases = (
+				48CC36A2CC844D1BDA1163E1 /* [CP] Check Pods Manifest.lock */,
+				EF234A502046E50500D3280A /* Sources */,
+				EF234A512046E50500D3280A /* Frameworks */,
+				EF234A522046E50500D3280A /* Resources */,
+				1E546808ACCCC2E979BD8C86 /* [CP] Embed Pods Frameworks */,
+				AF7B0E1A5B4AE3B26B02045F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF234A562046E50500D3280A /* PBXTargetDependency */,
+			);
+			name = VKContactsSyncUITests;
+			productName = VKContactsSyncUITests;
+			productReference = EF234A542046E50500D3280A /* VKContactsSyncUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF234A2A2046E50500D3280A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Yevgenii Pasko";
+				TargetAttributes = {
+					EF234A312046E50500D3280A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EF234A482046E50500D3280A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF234A312046E50500D3280A;
+					};
+					EF234A532046E50500D3280A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF234A312046E50500D3280A;
+					};
+				};
+			};
+			buildConfigurationList = EF234A2D2046E50500D3280A /* Build configuration list for PBXProject "VKContactsSync" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF234A292046E50500D3280A;
+			productRefGroup = EF234A332046E50500D3280A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF234A312046E50500D3280A /* VKContactsSync */,
+				EF234A482046E50500D3280A /* VKContactsSyncTests */,
+				EF234A532046E50500D3280A /* VKContactsSyncUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF234A302046E50500D3280A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF234A432046E50500D3280A /* LaunchScreen.storyboard in Resources */,
+				EF234A402046E50500D3280A /* Assets.xcassets in Resources */,
+				EF234A3B2046E50500D3280A /* Main.storyboard in Resources */,
+				EF4ADE57204DB829002443FD /* FirstInitCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF234A472046E50500D3280A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF234A522046E50500D3280A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A85FF1C27414FBF589CD504 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VKContactsSyncTests/Pods-VKContactsSyncTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0EB8C34D8D0AA6D12FBC3A97 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VKContactsSync/Pods-VKContactsSync-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E546808ACCCC2E979BD8C86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VKContactsSyncUITests/Pods-VKContactsSyncUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29DC1D19AA1250DD154E748A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VKContactsSync-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48CC36A2CC844D1BDA1163E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VKContactsSyncUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49F289561587CD88B8290802 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VKContactsSyncTests/Pods-VKContactsSyncTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VKContactsSyncTests/Pods-VKContactsSyncTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B5E08B7310B9F5AEE069120 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VKContactsSyncTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF7B0E1A5B4AE3B26B02045F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VKContactsSyncUITests/Pods-VKContactsSyncUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7FD72BC7C99DEFD9AFA88E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VKContactsSync/Pods-VKContactsSync-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/CollectionViewSlantedLayout/CollectionViewSlantedLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/DGElasticPullToRefresh/DGElasticPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/LFLoginController/LFLoginController.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/RHPreviewCell/RHPreviewCell.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SWTableViewCell/SWTableViewCell.framework",
+				"${BUILT_PRODUCTS_DIR}/TRMosaicLayout/TRMosaicLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/TimelineTableViewCell/TimelineTableViewCell.framework",
+				"${BUILT_PRODUCTS_DIR}/VK-ios-sdk/VK_ios_sdk.framework",
+				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMCheckBox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionViewSlantedLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGElasticPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LFLoginController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RHPreviewCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWTableViewCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRMosaicLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TimelineTableViewCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VK_ios_sdk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VKContactsSync/Pods-VKContactsSync-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF234A2E2046E50500D3280A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4ADE54204DB829002443FD /* OriginTableViewController.swift in Sources */,
+				EFB6FFEE204EC34F0050324E /* ClientInfoObject.swift in Sources */,
+				EF0524C9204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift in Sources */,
+				EF0524C5204E12C800F1EB7F /* LauncherModel.swift in Sources */,
+				EF234A3E2046E50500D3280A /* VKContactsSync.xcdatamodeld in Sources */,
+				EF4ADE55204DB829002443FD /* ViewController.swift in Sources */,
+				EF234A362046E50500D3280A /* AppDelegate.swift in Sources */,
+				EFB6FFF2204ECA350050324E /* VKontakteSynchronizer.swift in Sources */,
+				EFB6FFF8204EE63F0050324E /* UserDataObject.swift in Sources */,
+				EF307CD3204DFD4E005A30CA /* Constants.swift in Sources */,
+				EF4ADE56204DB829002443FD /* FirstInitCollectionViewCell.swift in Sources */,
+				EF5352C9204EB55700931711 /* CoreDataManager.swift in Sources */,
+				EF4ADE5B204DBA04002443FD /* WebClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF234A452046E50500D3280A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB6FFEF204EC34F0050324E /* ClientInfoObject.swift in Sources */,
+				EF234A4E2046E50500D3280A /* VKContactsSyncTests.swift in Sources */,
+				EFB6FFF5204ECACD0050324E /* WebClient.swift in Sources */,
+				EF0524CA204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift in Sources */,
+				EFB6FFF3204ECA350050324E /* VKontakteSynchronizer.swift in Sources */,
+				EF0524C6204E12C800F1EB7F /* LauncherModel.swift in Sources */,
+				EFB6FFDC204EBAA10050324E /* AppDelegate.swift in Sources */,
+				EFB6FFD8204EB9CB0050324E /* CoreDataManager.swift in Sources */,
+				EFB6FFF9204EE63F0050324E /* UserDataObject.swift in Sources */,
+				EF0524CC204E211D00F1EB7F /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF234A502046E50500D3280A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB6FFF0204EC34F0050324E /* ClientInfoObject.swift in Sources */,
+				EF234A592046E50500D3280A /* VKContactsSyncUITests.swift in Sources */,
+				EFB6FFF6204ECACE0050324E /* WebClient.swift in Sources */,
+				EF0524CB204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift in Sources */,
+				EFB6FFF4204ECA350050324E /* VKontakteSynchronizer.swift in Sources */,
+				EF0524C7204E12C800F1EB7F /* LauncherModel.swift in Sources */,
+				EFB6FFDD204EBAA20050324E /* AppDelegate.swift in Sources */,
+				EFB6FFD9204EB9CB0050324E /* CoreDataManager.swift in Sources */,
+				EFB6FFFA204EE63F0050324E /* UserDataObject.swift in Sources */,
+				EF0524CD204E211E00F1EB7F /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF234A4B2046E50500D3280A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF234A312046E50500D3280A /* VKContactsSync */;
+			targetProxy = EF234A4A2046E50500D3280A /* PBXContainerItemProxy */;
+		};
+		EF234A562046E50500D3280A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF234A312046E50500D3280A /* VKContactsSync */;
+			targetProxy = EF234A552046E50500D3280A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF234A392046E50500D3280A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF234A3A2046E50500D3280A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF234A412046E50500D3280A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF234A422046E50500D3280A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF234A5B2046E50500D3280A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF234A5C2046E50500D3280A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF234A5E2046E50500D3280A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FFD70EBF2CFD865A9704D9F /* Pods-VKContactsSync.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZS64M736MH;
+				INFOPLIST_FILE = VKContactsSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VKContactsSync.VKContactsSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF234A5F2046E50500D3280A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37CDEE909A9D63BC2953B0F8 /* Pods-VKContactsSync.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZS64M736MH;
+				INFOPLIST_FILE = VKContactsSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VKContactsSync.VKContactsSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF234A612046E50500D3280A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16BE3294D6D0B404DF2F2FB8 /* Pods-VKContactsSyncTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZS64M736MH;
+				INFOPLIST_FILE = VKContactsSyncTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VKContactsSync.VKContactsSyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VKContactsSync.app/VKContactsSync";
+			};
+			name = Debug;
+		};
+		EF234A622046E50500D3280A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29E25CE499C29A1FBECFA63E /* Pods-VKContactsSyncTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZS64M736MH;
+				INFOPLIST_FILE = VKContactsSyncTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VKContactsSync.VKContactsSyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VKContactsSync.app/VKContactsSync";
+			};
+			name = Release;
+		};
+		EF234A642046E50500D3280A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA016FB5DFB4A5742996A37C /* Pods-VKContactsSyncUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZS64M736MH;
+				INFOPLIST_FILE = VKContactsSyncUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VKContactsSync.VKContactsSyncUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VKContactsSync;
+			};
+			name = Debug;
+		};
+		EF234A652046E50500D3280A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDB84726140C305EE6C8FAC4 /* Pods-VKContactsSyncUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZS64M736MH;
+				INFOPLIST_FILE = VKContactsSyncUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VKContactsSync.VKContactsSyncUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VKContactsSync;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF234A2D2046E50500D3280A /* Build configuration list for PBXProject "VKContactsSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF234A5B2046E50500D3280A /* Debug */,
+				EF234A5C2046E50500D3280A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF234A5D2046E50500D3280A /* Build configuration list for PBXNativeTarget "VKContactsSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF234A5E2046E50500D3280A /* Debug */,
+				EF234A5F2046E50500D3280A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF234A602046E50500D3280A /* Build configuration list for PBXNativeTarget "VKContactsSyncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF234A612046E50500D3280A /* Debug */,
+				EF234A622046E50500D3280A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF234A632046E50500D3280A /* Build configuration list for PBXNativeTarget "VKContactsSyncUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF234A642046E50500D3280A /* Debug */,
+				EF234A652046E50500D3280A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF234A3C2046E50500D3280A /* VKContactsSync.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF234A3D2046E50500D3280A /* VKContactsSync.xcdatamodel */,
+			);
+			currentVersion = EF234A3D2046E50500D3280A /* VKContactsSync.xcdatamodel */;
+			path = VKContactsSync.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EF234A2A2046E50500D3280A /* Project object */;
+}

@@ -1,0 +1,67 @@
+PODS:
+  - Alamofire (4.7.0)
+  - BEMCheckBox (1.4.1)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - CollectionViewSlantedLayout (3.0.1)
+  - DGElasticPullToRefresh (1.1)
+  - expanding-collection (2.0.0)
+  - LFLoginController (0.3.1)
+  - NVActivityIndicatorView (4.1.1):
+    - NVActivityIndicatorView/Presenter (= 4.1.1)
+  - NVActivityIndicatorView/Presenter (4.1.1)
+  - RHPreviewCell (1.1.0)
+  - RxBlocking (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+  - RxTest (4.1.2):
+    - RxSwift (~> 4.0)
+  - SWTableViewCell (0.3.7)
+  - TimelineTableViewCell (1.2)
+  - TRMosaicLayout (1.0.0)
+  - VK-ios-sdk (1.4.6)
+
+DEPENDENCIES:
+  - Alamofire
+  - BEMCheckBox
+  - ChameleonFramework/Swift
+  - CollectionViewSlantedLayout
+  - DGElasticPullToRefresh
+  - expanding-collection
+  - LFLoginController
+  - NVActivityIndicatorView
+  - RHPreviewCell
+  - RxBlocking
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - RxTest
+  - SWTableViewCell
+  - TimelineTableViewCell
+  - TRMosaicLayout
+  - VK-ios-sdk
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  CollectionViewSlantedLayout: 8c8ebc112e3ac1c3318a916aa9c8d9f1901f0dd9
+  DGElasticPullToRefresh: 28f11a6026302a90f8ffebbc6e24748e584dddd3
+  expanding-collection: bd73e94cc3bd97d242d333ee61487d8823d652b6
+  LFLoginController: ded1e7e1f625d6ae9762faf491d74519ce017f46
+  NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
+  RHPreviewCell: f460f9d372d187d8901469402741af65be0f7eb7
+  RxBlocking: f6054985901412fc8c02daa84e92d4ba68c61389
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  RxTest: e634f15fd2c2cd0e0120132ef7a4f7be69ad0393
+  SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
+  TimelineTableViewCell: 71a4bc787bfeb5a85083171d18b113a5f5db2be8
+  TRMosaicLayout: 1875505c48dd2877afd69a8bea7b4c1c63afa5b5
+  VK-ios-sdk: 7fd48bc5aaa6b96c3197c1987eb6593f2ea67331
+
+PODFILE CHECKSUM: bd39a286f937b2c301975cf9faeaa00e88af2257
+
+COCOAPODS: 1.4.0
