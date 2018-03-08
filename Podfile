@@ -16,12 +16,12 @@ target 'VKContactsSync' do
   pod 'TRMosaicLayout'
   pod 'CollectionViewSlantedLayout'
   pod 'Alamofire'
-  pod "VK-ios-sdk"
   pod 'LFLoginController'
   pod 'expanding-collection'
   pod 'ChameleonFramework/Swift'
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
+  pod 'SDWebImage', '~> 4.0'
 
   target 'VKContactsSyncTests' do
     inherit! :search_paths

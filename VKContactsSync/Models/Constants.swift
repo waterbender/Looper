@@ -28,4 +28,7 @@ class Constants {
     // VK Settings
     static let VKClientID = "6390042"
     
+    // Cells identifiers
+    static let cellVkUserIdentifier = "VkontakteUserTableViewCellIdentifier"
+    
 }

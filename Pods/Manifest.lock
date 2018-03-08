@@ -19,10 +19,12 @@ PODS:
   - RxSwift (4.1.2)
   - RxTest (4.1.2):
     - RxSwift (~> 4.0)
+  - SDWebImage (4.3.2):
+    - SDWebImage/Core (= 4.3.2)
+  - SDWebImage/Core (4.3.2)
   - SWTableViewCell (0.3.7)
   - TimelineTableViewCell (1.2)
   - TRMosaicLayout (1.0.0)
-  - VK-ios-sdk (1.4.6)
 
 DEPENDENCIES:
   - Alamofire
@@ -38,10 +40,10 @@ DEPENDENCIES:
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
   - RxTest
+  - SDWebImage (~> 4.0)
   - SWTableViewCell
   - TimelineTableViewCell
   - TRMosaicLayout
-  - VK-ios-sdk
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
@@ -57,11 +59,11 @@ SPEC CHECKSUMS:
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   RxTest: e634f15fd2c2cd0e0120132ef7a4f7be69ad0393
+  SDWebImage: 29bd3c0bc1f01e5eb59720847c64ad4c4ca1af5d
   SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
   TimelineTableViewCell: 71a4bc787bfeb5a85083171d18b113a5f5db2be8
   TRMosaicLayout: 1875505c48dd2877afd69a8bea7b4c1c63afa5b5
-  VK-ios-sdk: 7fd48bc5aaa6b96c3197c1987eb6593f2ea67331
 
-PODFILE CHECKSUM: bd39a286f937b2c301975cf9faeaa00e88af2257
+PODFILE CHECKSUM: 35c160502f13d71c7658405557c9d52b931eb5d4
 
 COCOAPODS: 1.4.0

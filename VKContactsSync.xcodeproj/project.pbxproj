@@ -32,12 +32,12 @@
 		EF234A4E2046E50500D3280A /* VKContactsSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF234A4D2046E50500D3280A /* VKContactsSyncTests.swift */; };
 		EF234A592046E50500D3280A /* VKContactsSyncUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF234A582046E50500D3280A /* VKContactsSyncUITests.swift */; };
 		EF307CD3204DFD4E005A30CA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF307CD2204DFD4E005A30CA /* Constants.swift */; };
-		EF4ADE54204DB829002443FD /* OriginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4ADE4F204DB829002443FD /* OriginTableViewController.swift */; };
-		EF4ADE55204DB829002443FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4ADE50204DB829002443FD /* ViewController.swift */; };
-		EF4ADE56204DB829002443FD /* FirstInitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4ADE52204DB829002443FD /* FirstInitCollectionViewCell.swift */; };
-		EF4ADE57204DB829002443FD /* FirstInitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF4ADE53204DB829002443FD /* FirstInitCollectionViewCell.xib */; };
+		EF4ADE55204DB829002443FD /* TabBarSocialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4ADE50204DB829002443FD /* TabBarSocialController.swift */; };
 		EF4ADE5B204DBA04002443FD /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4ADE5A204DBA04002443FD /* WebClient.swift */; };
 		EF5352C9204EB55700931711 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5352C8204EB55700931711 /* CoreDataManager.swift */; };
+		EFA399B720518FDF00FE8E96 /* VKontacteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA399B620518FDF00FE8E96 /* VKontacteViewController.swift */; };
+		EFA399B820518FDF00FE8E96 /* VKontacteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA399B620518FDF00FE8E96 /* VKontacteViewController.swift */; };
+		EFA399B920518FDF00FE8E96 /* VKontacteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA399B620518FDF00FE8E96 /* VKontacteViewController.swift */; };
 		EFB6FFD8204EB9CB0050324E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5352C8204EB55700931711 /* CoreDataManager.swift */; };
 		EFB6FFD9204EB9CB0050324E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5352C8204EB55700931711 /* CoreDataManager.swift */; };
 		EFB6FFDC204EBAA10050324E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF234A352046E50500D3280A /* AppDelegate.swift */; };
@@ -53,6 +53,9 @@
 		EFB6FFF8204EE63F0050324E /* UserDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6FFF7204EE63F0050324E /* UserDataObject.swift */; };
 		EFB6FFF9204EE63F0050324E /* UserDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6FFF7204EE63F0050324E /* UserDataObject.swift */; };
 		EFB6FFFA204EE63F0050324E /* UserDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6FFF7204EE63F0050324E /* UserDataObject.swift */; };
+		EFDE723A2051A50200AB1615 /* VkontakteUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE72392051A50200AB1615 /* VkontakteUserTableViewCell.swift */; };
+		EFDE723B2051A50200AB1615 /* VkontakteUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE72392051A50200AB1615 /* VkontakteUserTableViewCell.swift */; };
+		EFDE723C2051A50200AB1615 /* VkontakteUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE72392051A50200AB1615 /* VkontakteUserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,15 +103,14 @@
 		EF234A582046E50500D3280A /* VKContactsSyncUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKContactsSyncUITests.swift; sourceTree = "<group>"; };
 		EF234A5A2046E50500D3280A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF307CD2204DFD4E005A30CA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		EF4ADE4F204DB829002443FD /* OriginTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginTableViewController.swift; sourceTree = "<group>"; };
-		EF4ADE50204DB829002443FD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EF4ADE52204DB829002443FD /* FirstInitCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstInitCollectionViewCell.swift; sourceTree = "<group>"; };
-		EF4ADE53204DB829002443FD /* FirstInitCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstInitCollectionViewCell.xib; sourceTree = "<group>"; };
+		EF4ADE50204DB829002443FD /* TabBarSocialController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarSocialController.swift; sourceTree = "<group>"; };
 		EF4ADE5A204DBA04002443FD /* WebClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClient.swift; sourceTree = "<group>"; };
 		EF5352C8204EB55700931711 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		EFA399B620518FDF00FE8E96 /* VKontacteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKontacteViewController.swift; sourceTree = "<group>"; };
 		EFB6FFED204EC34F0050324E /* ClientInfoObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientInfoObject.swift; sourceTree = "<group>"; };
 		EFB6FFF1204ECA350050324E /* VKontakteSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKontakteSynchronizer.swift; sourceTree = "<group>"; };
 		EFB6FFF7204EE63F0050324E /* UserDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataObject.swift; sourceTree = "<group>"; };
+		EFDE72392051A50200AB1615 /* VkontakteUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkontakteUserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,20 +223,11 @@
 		EF4ADE4D204DB829002443FD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EF4ADE4F204DB829002443FD /* OriginTableViewController.swift */,
-				EF4ADE50204DB829002443FD /* ViewController.swift */,
+				EF4ADE50204DB829002443FD /* TabBarSocialController.swift */,
 				EF0524C8204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift */,
+				EFA399B620518FDF00FE8E96 /* VKontacteViewController.swift */,
 				EF1A6196204F1AE60081EE95 /* FriendListViewConroller.swift */,
-				EF4ADE51204DB829002443FD /* Views */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		EF4ADE51204DB829002443FD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				EF4ADE52204DB829002443FD /* FirstInitCollectionViewCell.swift */,
-				EF4ADE53204DB829002443FD /* FirstInitCollectionViewCell.xib */,
+				EFDE72392051A50200AB1615 /* VkontakteUserTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -397,7 +390,6 @@
 				EF234A432046E50500D3280A /* LaunchScreen.storyboard in Resources */,
 				EF234A402046E50500D3280A /* Assets.xcassets in Resources */,
 				EF234A3B2046E50500D3280A /* Main.storyboard in Resources */,
-				EF4ADE57204DB829002443FD /* FirstInitCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,10 +563,10 @@
 				"${BUILT_PRODUCTS_DIR}/RHPreviewCell/RHPreviewCell.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SWTableViewCell/SWTableViewCell.framework",
 				"${BUILT_PRODUCTS_DIR}/TRMosaicLayout/TRMosaicLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/TimelineTableViewCell/TimelineTableViewCell.framework",
-				"${BUILT_PRODUCTS_DIR}/VK-ios-sdk/VK_ios_sdk.framework",
 				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -589,10 +581,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RHPreviewCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWTableViewCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRMosaicLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TimelineTableViewCell.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VK_ios_sdk.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,19 +599,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF4ADE54204DB829002443FD /* OriginTableViewController.swift in Sources */,
 				EFB6FFEE204EC34F0050324E /* ClientInfoObject.swift in Sources */,
 				EF0524C9204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift in Sources */,
 				EF0524C5204E12C800F1EB7F /* LauncherModel.swift in Sources */,
 				EF234A3E2046E50500D3280A /* VKContactsSync.xcdatamodeld in Sources */,
-				EF4ADE55204DB829002443FD /* ViewController.swift in Sources */,
+				EF4ADE55204DB829002443FD /* TabBarSocialController.swift in Sources */,
 				EF234A362046E50500D3280A /* AppDelegate.swift in Sources */,
 				EF1A619B204F34170081EE95 /* VKViewModel.swift in Sources */,
 				EFB6FFF2204ECA350050324E /* VKontakteSynchronizer.swift in Sources */,
 				EFB6FFF8204EE63F0050324E /* UserDataObject.swift in Sources */,
 				EF1A6197204F1AE60081EE95 /* FriendListViewConroller.swift in Sources */,
+				EFA399B720518FDF00FE8E96 /* VKontacteViewController.swift in Sources */,
 				EF307CD3204DFD4E005A30CA /* Constants.swift in Sources */,
-				EF4ADE56204DB829002443FD /* FirstInitCollectionViewCell.swift in Sources */,
+				EFDE723A2051A50200AB1615 /* VkontakteUserTableViewCell.swift in Sources */,
 				EF5352C9204EB55700931711 /* CoreDataManager.swift in Sources */,
 				EF4ADE5B204DBA04002443FD /* WebClient.swift in Sources */,
 			);
@@ -629,6 +621,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA399B820518FDF00FE8E96 /* VKontacteViewController.swift in Sources */,
 				EFB6FFEF204EC34F0050324E /* ClientInfoObject.swift in Sources */,
 				EF1A619C204F34170081EE95 /* VKViewModel.swift in Sources */,
 				EF1A6198204F1AE60081EE95 /* FriendListViewConroller.swift in Sources */,
@@ -636,6 +629,7 @@
 				EFB6FFF5204ECACD0050324E /* WebClient.swift in Sources */,
 				EF0524CA204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift in Sources */,
 				EFB6FFF3204ECA350050324E /* VKontakteSynchronizer.swift in Sources */,
+				EFDE723B2051A50200AB1615 /* VkontakteUserTableViewCell.swift in Sources */,
 				EF0524C6204E12C800F1EB7F /* LauncherModel.swift in Sources */,
 				EFB6FFDC204EBAA10050324E /* AppDelegate.swift in Sources */,
 				EFB6FFD8204EB9CB0050324E /* CoreDataManager.swift in Sources */,
@@ -648,6 +642,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA399B920518FDF00FE8E96 /* VKontacteViewController.swift in Sources */,
 				EFB6FFF0204EC34F0050324E /* ClientInfoObject.swift in Sources */,
 				EF1A619D204F34170081EE95 /* VKViewModel.swift in Sources */,
 				EF1A6199204F1AE60081EE95 /* FriendListViewConroller.swift in Sources */,
@@ -655,6 +650,7 @@
 				EFB6FFF6204ECACE0050324E /* WebClient.swift in Sources */,
 				EF0524CB204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift in Sources */,
 				EFB6FFF4204ECA350050324E /* VKontakteSynchronizer.swift in Sources */,
+				EFDE723C2051A50200AB1615 /* VkontakteUserTableViewCell.swift in Sources */,
 				EF0524C7204E12C800F1EB7F /* LauncherModel.swift in Sources */,
 				EFB6FFDD204EBAA20050324E /* AppDelegate.swift in Sources */,
 				EFB6FFD9204EB9CB0050324E /* CoreDataManager.swift in Sources */,

@@ -144,10 +144,10 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/RHPreviewCell/RHPreviewCell.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SWTableViewCell/SWTableViewCell.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TRMosaicLayout/TRMosaicLayout.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TimelineTableViewCell/TimelineTableViewCell.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/VK-ios-sdk/VK_ios_sdk.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -161,10 +161,10 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/RHPreviewCell/RHPreviewCell.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SWTableViewCell/SWTableViewCell.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TRMosaicLayout/TRMosaicLayout.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TimelineTableViewCell/TimelineTableViewCell.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/VK-ios-sdk/VK_ios_sdk.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

@@ -42,18 +42,31 @@ struct VKontakteSynchronizer {
         })
     }
     
-    func loadFriendsWithAccessToken(accessToken: String, completionHandler: @escaping (Any) -> Void) {
+    func loadFriendsWithAccessToken(accessToken: String, completionHandlerFirst: @escaping (Any) -> Void) {
         
         let webClient = WebClient()
-        let getProfileUrl = "\(Constants.VKONTAKTE_URL)/method/\(Constants.VKONTAKTE_GET_FRIENDS_INFO_METHOD)?PARAMETERS&access_token=\(accessToken)&fields=city,domain,contacts&v=5.73"
+        let getProfileUrl = "\(Constants.VKONTAKTE_URL)/method/\(Constants.VKONTAKTE_GET_FRIENDS_INFO_METHOD)?PARAMETERS&access_token=\(accessToken)&fields=city,domain,contacts,photo_50&v=5.73"
     
         webClient.getRequestWithUrl(url: getProfileUrl, completionHandler: { (response) in
           
-            
-            
-            
-            
-            completionHandler(response)
+            let value = response.value as! [String:Any]
+            if let resultDictResponse: Dictionary<String,Any> = value["response"] as? Dictionary<String, Any> {
+                let items = resultDictResponse["items"] ?? []
+                completionHandlerFirst(items)
+            } else {
+                completionHandlerFirst([])
+            }
         })
+    }
+    
+    func getAccessTokenForVk() -> String {
+        let coreDataManager = CoreDataManager()
+        let objectVK = coreDataManager.getClientInfoObjectFor(type: Constants.TYPE_VKONTAKTE)
+        if let currentUser = objectVK {
+            let result = currentUser["userAccessToken"] as! String
+            return result
+        } else {
+            return ""
+        }
     }
 }

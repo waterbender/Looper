@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C7C91EB39F7FE08193A560EE18220ED5"
+               BlueprintIdentifier = "EE4477CA99DFD46F54CECCC97BAEA37B"
                BuildableName = "TimelineTableViewCell.bundle"
                BlueprintName = "TimelineTableViewCell-TimelineTableViewCell"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C7C91EB39F7FE08193A560EE18220ED5"
+            BlueprintIdentifier = "EE4477CA99DFD46F54CECCC97BAEA37B"
             BuildableName = "TimelineTableViewCell.bundle"
             BlueprintName = "TimelineTableViewCell-TimelineTableViewCell"
             ReferencedContainer = "container:Pods.xcodeproj">

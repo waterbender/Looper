@@ -14,9 +14,9 @@ struct WebClient {
         
         Alamofire.request(url).responseJSON { (response) in
             
-            if let value = response.value as? [String: AnyObject] {
-                print(value)
-            }
+//            if let value = response.value as? [String: AnyObject] {
+//                print(value)
+//            }
             
             completionHandler(response)
         }

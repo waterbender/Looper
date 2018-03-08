@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DDB1EB15F829E07B724040A12B104F8F"
+               BlueprintIdentifier = "E35FC96CF51A48E5E2AA12599AD909E5"
                BlueprintName = "RHPreviewCell"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "RHPreviewCell.framework">

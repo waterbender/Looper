@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5F3FFDA4246E7AB52005A9E803EDAC1F"
+               BlueprintIdentifier = "02BC27CA6337DC12C9E0252C7643F00C"
                BlueprintName = "TimelineTableViewCell"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "TimelineTableViewCell.framework">

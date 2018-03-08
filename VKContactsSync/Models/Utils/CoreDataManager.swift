@@ -81,6 +81,32 @@ struct CoreDataManager {
         return false
     }
     
+    func getClientInfoObjectFor(type: String) -> [String:Any]? {
+        
+        let fetchRequest = NSFetchRequest<NSDictionary>(entityName: "ClientInfoObject")
+        let sortDescriptor = NSSortDescriptor(key: "typeOfRequest", ascending: true)
+        fetchRequest.predicate = NSPredicate(format: "typeOfRequest = %@", type)
+        fetchRequest.resultType = .dictionaryResultType
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        if let managedContext = mainManagedObjectContext() {
+            
+            // if is object stop
+            do {
+                
+                let result = try managedContext.fetch(fetchRequest)
+
+                return result.first as? Dictionary<String,Any>
+                
+            } catch let error as NSError {
+                print("Error: \(error.localizedDescription)")
+                return nil
+            }
+        }
+        
+        return nil
+    }
+    
     private func mainManagedObjectContext() -> NSManagedObjectContext? {
         guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else {
