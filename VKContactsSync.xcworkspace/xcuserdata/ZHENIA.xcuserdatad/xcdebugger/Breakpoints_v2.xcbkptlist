@@ -330,7 +330,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VKContactsSync/Models/Utils/VKontakteSynchronizer.swift"
-            timestampString = "542247010.178792"
+            timestampString = "542253659.397071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -378,7 +378,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VKContactsSync/Models/Utils/VKontakteSynchronizer.swift"
-            timestampString = "542247010.178979"
+            timestampString = "542253659.397423"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
@@ -394,7 +394,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VKContactsSync/Models/Utils/VKontakteSynchronizer.swift"
-            timestampString = "542247010.1791331"
+            timestampString = "542253659.397495"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -410,7 +410,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VKContactsSync/Models/Utils/VKontakteSynchronizer.swift"
-            timestampString = "542247010.179279"
+            timestampString = "542253659.397562"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -426,7 +426,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VKContactsSync/Models/Utils/VKontakteSynchronizer.swift"
-            timestampString = "542247010.179419"
+            timestampString = "542253659.397627"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
@@ -442,7 +442,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VKContactsSync/Models/Utils/CoreDataManager.swift"
-            timestampString = "542228741.507764"
+            timestampString = "542253659.397692"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
@@ -458,7 +458,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VKContactsSync/Models/Utils/CoreDataManager.swift"
-            timestampString = "542228741.507839"
+            timestampString = "542253659.397927"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
@@ -474,7 +474,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VKContactsSync/Models/Utils/CoreDataManager.swift"
-            timestampString = "542228741.5079091"
+            timestampString = "542253659.397993"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
@@ -554,7 +554,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VKContactsSync/Models/Utils/CoreDataManager.swift"
-            timestampString = "542228741.5081021"
+            timestampString = "542253659.398152"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
@@ -570,7 +570,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VKContactsSync/Models/Utils/CoreDataManager.swift"
-            timestampString = "542228741.5081739"
+            timestampString = "542253659.3982151"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
@@ -586,7 +586,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VKContactsSync/Models/Utils/CoreDataManager.swift"
-            timestampString = "542228741.508244"
+            timestampString = "542253659.398276"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "76"
@@ -666,11 +666,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VKContactsSync/Models/Utils/CoreDataManager.swift"
-            timestampString = "542228741.5084749"
+            timestampString = "542253659.398432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "getClientInfoObjectFor(type:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -681,24 +681,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VKContactsSync/Models/Utils/VKontakteSynchronizer.swift"
-            timestampString = "542247010.180479"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "loadFriendsWithAccessToken(accessToken:completionHandlerFirst:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "VKContactsSync/Views/FriendListViewConroller.swift"
-            timestampString = "542248177.487674"
+            timestampString = "542248862.549588"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "103"
@@ -714,7 +698,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VKContactsSync/Views/FriendListViewConroller.swift"
-            timestampString = "542248177.4878401"
+            timestampString = "542248862.549661"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "105"
@@ -730,7 +714,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VKContactsSync/Views/FriendListViewConroller.swift"
-            timestampString = "542248177.4879251"
+            timestampString = "542248862.549733"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "119"
@@ -746,12 +730,26 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VKContactsSync/Models/Utils/ContactsHelper.swift"
-            timestampString = "542248177.488027"
+            timestampString = "542253659.398577"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "checkExistenceInContacts(phone:)"
+            startingLineNumber = "151"
+            endingLineNumber = "151">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VKContactsSync/Views/FriendListViewConroller.swift"
+            timestampString = "542248873.903077"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "syncContacts()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -762,12 +760,92 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VKContactsSync/Models/Utils/ContactsHelper.swift"
-            timestampString = "542248177.5731651"
+            timestampString = "542253659.399245"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "addContactsToList(array:complitedHandle:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VKContactsSync/Models/Utils/ContactsHelper.swift"
+            timestampString = "542253659.399562"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "addContactsToList(array:complitedHandle:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VKContactsSync/Models/Utils/ContactsHelper.swift"
+            timestampString = "542253659.399863"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "addContactsToList(array:complitedHandle:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VKContactsSync/Models/Utils/ContactsHelper.swift"
+            timestampString = "542253659.400148"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "addContactsToList(array:complitedHandle:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VKContactsSync/Models/Utils/ContactsHelper.swift"
+            timestampString = "542253659.400431"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "checkExistenceInContacts(phone:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VKContactsSync/Models/Utils/CoreDataManager.swift"
+            timestampString = "542253659.400707"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "removeElement(type:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -81,6 +81,16 @@ struct CoreDataManager {
         return false
     }
     
+    func removeElement(type: String) {
+        
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "ClientInfoObject")
+        fetchRequest.predicate = NSPredicate(format: "typeOfRequest = %@", type)
+        
+        if let result = try? self.mainManagedObjectContext()?.fetch(fetchRequest) {
+            self.mainManagedObjectContext()?.delete((result?.first)!)
+        }
+    }
+    
     func getClientInfoObjectFor(type: String) -> [String:Any]? {
         
         let fetchRequest = NSFetchRequest<NSDictionary>(entityName: "ClientInfoObject")

@@ -50,6 +50,9 @@ struct VKontakteSynchronizer {
         webClient.getRequestWithUrl(url: getProfileUrl, completionHandler: { (response) in
           
             let value = response.value as! [String:Any]
+            if (value.keys.contains("error")) {
+                self.removeVkFromCoreData()
+            }
             if let resultDictResponse: Dictionary<String,Any> = value["response"] as? Dictionary<String, Any> {
                 let items = resultDictResponse["items"] ?? []
                 completionHandlerFirst(items)
@@ -68,5 +71,10 @@ struct VKontakteSynchronizer {
         } else {
             return ""
         }
+    }
+    
+    func removeVkFromCoreData() {
+        let coreDataManager = CoreDataManager()
+        coreDataManager.removeElement(type: Constants.TYPE_VKONTAKTE)
     }
 }
