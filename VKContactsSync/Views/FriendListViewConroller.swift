@@ -9,23 +9,29 @@
 import UIKit
 import DGElasticPullToRefresh
 import SDWebImage
+import RxSwift
+import NVActivityIndicatorView
 
 class FriendListViewConroller: UIViewController {
-
+    
+    @IBOutlet weak var activityIndicatorView: NVActivityIndicatorView!
     @IBOutlet weak var firendListTableView: UITableView!
     var arrayOfUsers = [Any]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Initialize tableView
         self.hidesBottomBarWhenPushed = false
         let loadingView = DGElasticPullToRefreshLoadingViewCircle()
         loadingView.tintColor = UIColor(red: 78/255.0, green: 221/255.0, blue: 200/255.0, alpha: 1.0)
+        self.activityIndicatorView.color = UIColor.orange
+        
         firendListTableView.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
             // Add your logic here
             // Do not forget to call dg_stopLoading() at the end
             
+            self?.activityIndicatorView.startAnimating()
             self?.reloadSelf(compliteHeader: {
                 self?.firendListTableView.dg_stopLoading()
             })
@@ -39,10 +45,17 @@ class FriendListViewConroller: UIViewController {
         navigationItem.title = "Friends"
         // Do any additional setup after loading the view.
         
+        // set sync button
+        let image = UIImage(named: "connected")?.withRenderingMode(.automatic)
+        let button = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(synchronizationMethod))
+        button.tintColor = .white
+        self.navigationItem.rightBarButtonItem = button
+        
+        activityIndicatorView.startAnimating()
         self.reloadSelf {
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -55,21 +68,22 @@ class FriendListViewConroller: UIViewController {
             self.arrayOfUsers = result.first as! [Any]
             DispatchQueue.main.async {
                 self.firendListTableView.reloadData()
+                self.activityIndicatorView.stopAnimating()
                 compliteHeader()
             }
         })
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 
 extension FriendListViewConroller: UITableViewDelegate, UITableViewDataSource {
@@ -101,28 +115,36 @@ extension FriendListViewConroller: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension UIImageView {
-    public func imageFromUrl(urlString: String) {
-        let operationQueue = OperationQueue()
-        operationQueue.addOperation {
-            
-            do {
-                
-                let url = URL(string: urlString)
-                let data = try Data(contentsOf: url!)
-                // do something with data
-                // if the call fails, the catch block is executed
-                let image = UIImage(data: data)
-                
-                DispatchQueue.main.async {
-                    self.image = image
-                }
-                
-            } catch {
-                print(error.localizedDescription)
+extension FriendListViewConroller: SyncDelegate {
+    
+    @objc func synchronizationMethod() {
+        performSegue(withIdentifier: Constants.segueSynchronizationListSegueueIdentofier, sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let syncController = segue.destination as! SynchronizationViewController
+        syncController.delegate = self
+    }
+    
+    func syncContacts() {
+        
+        let helper = ContactsHelper()
+        let queue = OperationQueue()
+        queue.addOperation {
+            DispatchQueue.main.async {
+                self.activityIndicatorView.startAnimating()
+                UIApplication.shared.beginIgnoringInteractionEvents()
             }
+            helper.addContactsToList(array: (self.arrayOfUsers), complitedHandle: {
+                DispatchQueue.main.async {
+                    self.activityIndicatorView.stopAnimating()
+                    UIApplication.shared.endIgnoringInteractionEvents()
+                }
+            })
         }
-            
+    }
+    func syncReminders() {
         
     }
 }

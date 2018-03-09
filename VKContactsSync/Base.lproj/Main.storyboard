@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M57-Vx-PqD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14092" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M57-Vx-PqD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14081.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Cochin.ttc">
-            <string>Cochin-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="2Ja-es-2e3">
@@ -152,7 +147,7 @@
             </objects>
             <point key="canvasLocation" x="-260" y="116"/>
         </scene>
-        <!--Item-->
+        <!--Friend List View Conroller-->
         <scene sceneID="0U2-GT-hPj">
             <objects>
                 <viewController modalPresentationStyle="currentContext" id="D9n-82-V5g" customClass="FriendListViewConroller" customModule="VKContactsSync" customModuleProvider="target" sceneMemberID="viewController">
@@ -244,24 +239,112 @@
                                     <outlet property="delegate" destination="D9n-82-V5g" id="97a-1X-o6Y"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0S-Pm-QdG" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="152" y="298" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Ub1-jQ-HVu"/>
+                                    <constraint firstAttribute="width" constant="70" id="YAg-rG-do6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="ballClipRotateMultiple"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="A0S-Pm-QdG" firstAttribute="centerY" secondItem="CIi-2X-1UG" secondAttribute="centerY" id="6w7-Fs-YEc"/>
                             <constraint firstItem="ONR-gv-5ay" firstAttribute="trailing" secondItem="G6b-wy-gHp" secondAttribute="trailing" id="Fft-6S-tYD"/>
                             <constraint firstItem="ONR-gv-5ay" firstAttribute="bottom" secondItem="G6b-wy-gHp" secondAttribute="bottom" id="NtE-AX-6jE"/>
                             <constraint firstItem="G6b-wy-gHp" firstAttribute="leading" secondItem="ONR-gv-5ay" secondAttribute="leading" id="THu-f0-0Tj"/>
                             <constraint firstItem="G6b-wy-gHp" firstAttribute="top" secondItem="ONR-gv-5ay" secondAttribute="top" id="fZX-rJ-IY8"/>
+                            <constraint firstItem="A0S-Pm-QdG" firstAttribute="centerX" secondItem="CIi-2X-1UG" secondAttribute="centerX" id="jjK-bg-bkO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ONR-gv-5ay"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="44" title="Item" id="D7H-zJ-xDM"/>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="A0S-Pm-QdG" id="l2M-86-9gW"/>
                         <outlet property="firendListTableView" destination="G6b-wy-gHp" id="WpG-gV-SvB"/>
+                        <segue destination="cMS-Qf-yyB" kind="presentation" identifier="SynchronizationListSegueue" modalPresentationStyle="overCurrentContext" id="c9i-U8-SEV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CjF-I7-ad9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarItem tag="44" title="Item" id="D7H-zJ-xDM"/>
             </objects>
             <point key="canvasLocation" x="-260" y="818.14092953523243"/>
+        </scene>
+        <!--Synchronization View Controller-->
+        <scene sceneID="sSB-5F-WqX">
+            <objects>
+                <viewController id="cMS-Qf-yyB" customClass="SynchronizationViewController" customModule="VKContactsSync" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GQp-dY-oQi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLb-4z-DP5">
+                                <rect key="frame" x="55" y="183" width="265" height="301"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d3i-SA-V3U">
+                                        <rect key="frame" x="8" y="108" width="249" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Synchronize contacts">
+                                                    <attributes>
+                                                        <font key="NSFont" size="16" name="Menlo-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qBV-6f-XkG">
+                                        <rect key="frame" x="8" y="154" width="249" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Add birthdays reminders">
+                                                    <attributes>
+                                                        <font key="NSFont" size="16" name="Menlo-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98624199628829956" green="0.7796865701675415" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="IRA-rr-mNF"/>
+                                    <constraint firstAttribute="height" constant="301" id="WH5-BO-1ir"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11181893199682236" green="0.1118365004658699" blue="0.1118125319480896" alpha="0.3632932323619632" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bLb-4z-DP5" firstAttribute="centerY" secondItem="GQp-dY-oQi" secondAttribute="centerY" id="9b0-Nd-1CI"/>
+                            <constraint firstItem="bLb-4z-DP5" firstAttribute="centerX" secondItem="GQp-dY-oQi" secondAttribute="centerX" id="yVq-ge-YG5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cgo-5D-6bL"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="addBirthdaysButton" destination="qBV-6f-XkG" id="SVV-HH-qhz"/>
+                        <outlet property="backStageView" destination="bLb-4z-DP5" id="H5G-et-rQF"/>
+                        <outlet property="synchronizeContactsButton" destination="d3i-SA-V3U" id="jdn-ZR-WiI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KbP-gD-3tp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469.60000000000002" y="817.24137931034488"/>
         </scene>
         <!--Login With Site View Contoller-->
         <scene sceneID="TmU-Q9-NJt">

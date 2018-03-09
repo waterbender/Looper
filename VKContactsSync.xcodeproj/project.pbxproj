@@ -10,6 +10,12 @@
 		1D800202BFC41BA0C2B909CD /* Pods_VKContactsSyncUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB1C76D66066B112154BFB1 /* Pods_VKContactsSyncUITests.framework */; };
 		312D030F66363E594C2E7993 /* Pods_VKContactsSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB1A0EDA22AE5EF75CE4F37 /* Pods_VKContactsSync.framework */; };
 		E53A2C506345842D32C2F553 /* Pods_VKContactsSyncTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2183E1C3545EF4B086B85F1F /* Pods_VKContactsSyncTests.framework */; };
+		EF03E5512051E7F500245F00 /* SynchronizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03E5502051E7F500245F00 /* SynchronizationViewController.swift */; };
+		EF03E5522051E7F500245F00 /* SynchronizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03E5502051E7F500245F00 /* SynchronizationViewController.swift */; };
+		EF03E5532051E7F500245F00 /* SynchronizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03E5502051E7F500245F00 /* SynchronizationViewController.swift */; };
+		EF03E5552051F1FD00245F00 /* ContactsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03E5542051F1FD00245F00 /* ContactsHelper.swift */; };
+		EF03E5562051F1FD00245F00 /* ContactsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03E5542051F1FD00245F00 /* ContactsHelper.swift */; };
+		EF03E5572051F1FD00245F00 /* ContactsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03E5542051F1FD00245F00 /* ContactsHelper.swift */; };
 		EF0524C5204E12C800F1EB7F /* LauncherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0524C4204E12C800F1EB7F /* LauncherModel.swift */; };
 		EF0524C6204E12C800F1EB7F /* LauncherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0524C4204E12C800F1EB7F /* LauncherModel.swift */; };
 		EF0524C7204E12C800F1EB7F /* LauncherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0524C4204E12C800F1EB7F /* LauncherModel.swift */; };
@@ -85,6 +91,8 @@
 		7BB1C76D66066B112154BFB1 /* Pods_VKContactsSyncUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKContactsSyncUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA016FB5DFB4A5742996A37C /* Pods-VKContactsSyncUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKContactsSyncUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKContactsSyncUITests/Pods-VKContactsSyncUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EDB84726140C305EE6C8FAC4 /* Pods-VKContactsSyncUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKContactsSyncUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VKContactsSyncUITests/Pods-VKContactsSyncUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EF03E5502051E7F500245F00 /* SynchronizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizationViewController.swift; sourceTree = "<group>"; };
+		EF03E5542051F1FD00245F00 /* ContactsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsHelper.swift; sourceTree = "<group>"; };
 		EF0524C4204E12C800F1EB7F /* LauncherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherModel.swift; sourceTree = "<group>"; };
 		EF0524C8204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithSiteViewContoller.swift; sourceTree = "<group>"; };
 		EF1A6196204F1AE60081EE95 /* FriendListViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListViewConroller.swift; sourceTree = "<group>"; };
@@ -228,6 +236,7 @@
 				EFA399B620518FDF00FE8E96 /* VKontacteViewController.swift */,
 				EF1A6196204F1AE60081EE95 /* FriendListViewConroller.swift */,
 				EFDE72392051A50200AB1615 /* VkontakteUserTableViewCell.swift */,
+				EF03E5502051E7F500245F00 /* SynchronizationViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,6 +257,7 @@
 				EF4ADE5A204DBA04002443FD /* WebClient.swift */,
 				EF5352C8204EB55700931711 /* CoreDataManager.swift */,
 				EFB6FFF1204ECA350050324E /* VKontakteSynchronizer.swift */,
+				EF03E5542051F1FD00245F00 /* ContactsHelper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -606,6 +616,8 @@
 				EF4ADE55204DB829002443FD /* TabBarSocialController.swift in Sources */,
 				EF234A362046E50500D3280A /* AppDelegate.swift in Sources */,
 				EF1A619B204F34170081EE95 /* VKViewModel.swift in Sources */,
+				EF03E5552051F1FD00245F00 /* ContactsHelper.swift in Sources */,
+				EF03E5512051E7F500245F00 /* SynchronizationViewController.swift in Sources */,
 				EFB6FFF2204ECA350050324E /* VKontakteSynchronizer.swift in Sources */,
 				EFB6FFF8204EE63F0050324E /* UserDataObject.swift in Sources */,
 				EF1A6197204F1AE60081EE95 /* FriendListViewConroller.swift in Sources */,
@@ -624,6 +636,7 @@
 				EFA399B820518FDF00FE8E96 /* VKontacteViewController.swift in Sources */,
 				EFB6FFEF204EC34F0050324E /* ClientInfoObject.swift in Sources */,
 				EF1A619C204F34170081EE95 /* VKViewModel.swift in Sources */,
+				EF03E5522051E7F500245F00 /* SynchronizationViewController.swift in Sources */,
 				EF1A6198204F1AE60081EE95 /* FriendListViewConroller.swift in Sources */,
 				EF234A4E2046E50500D3280A /* VKContactsSyncTests.swift in Sources */,
 				EFB6FFF5204ECACD0050324E /* WebClient.swift in Sources */,
@@ -634,6 +647,7 @@
 				EFB6FFDC204EBAA10050324E /* AppDelegate.swift in Sources */,
 				EFB6FFD8204EB9CB0050324E /* CoreDataManager.swift in Sources */,
 				EFB6FFF9204EE63F0050324E /* UserDataObject.swift in Sources */,
+				EF03E5562051F1FD00245F00 /* ContactsHelper.swift in Sources */,
 				EF0524CC204E211D00F1EB7F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -645,6 +659,7 @@
 				EFA399B920518FDF00FE8E96 /* VKontacteViewController.swift in Sources */,
 				EFB6FFF0204EC34F0050324E /* ClientInfoObject.swift in Sources */,
 				EF1A619D204F34170081EE95 /* VKViewModel.swift in Sources */,
+				EF03E5532051E7F500245F00 /* SynchronizationViewController.swift in Sources */,
 				EF1A6199204F1AE60081EE95 /* FriendListViewConroller.swift in Sources */,
 				EF234A592046E50500D3280A /* VKContactsSyncUITests.swift in Sources */,
 				EFB6FFF6204ECACE0050324E /* WebClient.swift in Sources */,
@@ -655,6 +670,7 @@
 				EFB6FFDD204EBAA20050324E /* AppDelegate.swift in Sources */,
 				EFB6FFD9204EB9CB0050324E /* CoreDataManager.swift in Sources */,
 				EFB6FFFA204EE63F0050324E /* UserDataObject.swift in Sources */,
+				EF03E5572051F1FD00245F00 /* ContactsHelper.swift in Sources */,
 				EF0524CD204E211E00F1EB7F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

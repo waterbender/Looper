@@ -24,6 +24,7 @@ class Constants {
     // ViewController
     static let segueLoginIdentifier = "AuthorizationVkSegue"
     static let segueFriendsListIdentifier = "FriendsListSegueue"
+    static let segueSynchronizationListSegueueIdentofier = "SynchronizationListSegueue"
     
     // VK Settings
     static let VKClientID = "6390042"
