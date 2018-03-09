@@ -62,6 +62,9 @@
 		EFDE723A2051A50200AB1615 /* VkontakteUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE72392051A50200AB1615 /* VkontakteUserTableViewCell.swift */; };
 		EFDE723B2051A50200AB1615 /* VkontakteUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE72392051A50200AB1615 /* VkontakteUserTableViewCell.swift */; };
 		EFDE723C2051A50200AB1615 /* VkontakteUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE72392051A50200AB1615 /* VkontakteUserTableViewCell.swift */; };
+		EFF9F5AC2052B17700F84D8C /* RemindersHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9F5AB2052B17700F84D8C /* RemindersHelper.swift */; };
+		EFF9F5AD2052B17700F84D8C /* RemindersHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9F5AB2052B17700F84D8C /* RemindersHelper.swift */; };
+		EFF9F5AE2052B17700F84D8C /* RemindersHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9F5AB2052B17700F84D8C /* RemindersHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +122,7 @@
 		EFB6FFF1204ECA350050324E /* VKontakteSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKontakteSynchronizer.swift; sourceTree = "<group>"; };
 		EFB6FFF7204EE63F0050324E /* UserDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataObject.swift; sourceTree = "<group>"; };
 		EFDE72392051A50200AB1615 /* VkontakteUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkontakteUserTableViewCell.swift; sourceTree = "<group>"; };
+		EFF9F5AB2052B17700F84D8C /* RemindersHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +262,7 @@
 				EF5352C8204EB55700931711 /* CoreDataManager.swift */,
 				EFB6FFF1204ECA350050324E /* VKontakteSynchronizer.swift */,
 				EF03E5542051F1FD00245F00 /* ContactsHelper.swift */,
+				EFF9F5AB2052B17700F84D8C /* RemindersHelper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -620,6 +625,7 @@
 				EF03E5512051E7F500245F00 /* SynchronizationViewController.swift in Sources */,
 				EFB6FFF2204ECA350050324E /* VKontakteSynchronizer.swift in Sources */,
 				EFB6FFF8204EE63F0050324E /* UserDataObject.swift in Sources */,
+				EFF9F5AC2052B17700F84D8C /* RemindersHelper.swift in Sources */,
 				EF1A6197204F1AE60081EE95 /* FriendListViewConroller.swift in Sources */,
 				EFA399B720518FDF00FE8E96 /* VKontacteViewController.swift in Sources */,
 				EF307CD3204DFD4E005A30CA /* Constants.swift in Sources */,
@@ -638,6 +644,7 @@
 				EF1A619C204F34170081EE95 /* VKViewModel.swift in Sources */,
 				EF03E5522051E7F500245F00 /* SynchronizationViewController.swift in Sources */,
 				EF1A6198204F1AE60081EE95 /* FriendListViewConroller.swift in Sources */,
+				EFF9F5AD2052B17700F84D8C /* RemindersHelper.swift in Sources */,
 				EF234A4E2046E50500D3280A /* VKContactsSyncTests.swift in Sources */,
 				EFB6FFF5204ECACD0050324E /* WebClient.swift in Sources */,
 				EF0524CA204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift in Sources */,
@@ -661,6 +668,7 @@
 				EF1A619D204F34170081EE95 /* VKViewModel.swift in Sources */,
 				EF03E5532051E7F500245F00 /* SynchronizationViewController.swift in Sources */,
 				EF1A6199204F1AE60081EE95 /* FriendListViewConroller.swift in Sources */,
+				EFF9F5AE2052B17700F84D8C /* RemindersHelper.swift in Sources */,
 				EF234A592046E50500D3280A /* VKContactsSyncUITests.swift in Sources */,
 				EFB6FFF6204ECACE0050324E /* WebClient.swift in Sources */,
 				EF0524CB204E1A3E00F1EB7F /* LoginWithSiteViewContoller.swift in Sources */,

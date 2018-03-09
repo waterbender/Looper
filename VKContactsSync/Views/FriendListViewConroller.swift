@@ -11,6 +11,7 @@ import DGElasticPullToRefresh
 import SDWebImage
 import RxSwift
 import NVActivityIndicatorView
+import EventKit
 
 class FriendListViewConroller: UIViewController {
     
@@ -54,6 +55,9 @@ class FriendListViewConroller: UIViewController {
         activityIndicatorView.startAnimating()
         self.reloadSelf {
         }
+        
+        let calendar = EKEventStore().defaultCalendarForNewReminders()
+        RemindersHelper().removeListWithCalendar(calendar: calendar!)
     }
     
     override func didReceiveMemoryWarning() {
@@ -145,6 +149,19 @@ extension FriendListViewConroller: SyncDelegate {
         }
     }
     func syncReminders() {
-        
+        let helper = RemindersHelper()
+        let queue = OperationQueue()
+        queue.addOperation {
+            DispatchQueue.main.async {
+                self.activityIndicatorView.startAnimating()
+                UIApplication.shared.beginIgnoringInteractionEvents()
+            }
+            helper.addRemindersToList(array: (self.arrayOfUsers), complitedHandle: {
+                DispatchQueue.main.async {
+                    self.activityIndicatorView.stopAnimating()
+                    UIApplication.shared.endIgnoringInteractionEvents()
+                }
+            })
+        }
     }
 }

@@ -45,7 +45,7 @@ struct VKontakteSynchronizer {
     func loadFriendsWithAccessToken(accessToken: String, completionHandlerFirst: @escaping (Any) -> Void) {
         
         let webClient = WebClient()
-        let getProfileUrl = "\(Constants.VKONTAKTE_URL)/method/\(Constants.VKONTAKTE_GET_FRIENDS_INFO_METHOD)?PARAMETERS&access_token=\(accessToken)&fields=city,domain,contacts,photo_50&v=5.73"
+        let getProfileUrl = "\(Constants.VKONTAKTE_URL)/method/\(Constants.VKONTAKTE_GET_FRIENDS_INFO_METHOD)?PARAMETERS&access_token=\(accessToken)&fields=city,domain,contacts,bdate,photo_50&v=5.73"
     
         webClient.getRequestWithUrl(url: getProfileUrl, completionHandler: { (response) in
           
