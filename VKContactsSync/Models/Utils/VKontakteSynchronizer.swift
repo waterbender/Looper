@@ -16,7 +16,7 @@ struct VKontakteSynchronizer {
         let getProfileUrl = "\(Constants.VKONTAKTE_URL)/method/\(Constants.VKONTAKTE_GET_PROFILE_METHOD)?PARAMETERS&access_token=\(accessToken)&fields=city,domain,contacts&v=5.73"
         
         webClient.getRequestWithUrl(url: getProfileUrl, completionHandler: { (response) in
-
+            
             let dictProfile = response.value as? [String: AnyObject]
             
             var clientInfo = [String:Any]()
@@ -46,19 +46,30 @@ struct VKontakteSynchronizer {
         
         let webClient = WebClient()
         let getProfileUrl = "\(Constants.VKONTAKTE_URL)/method/\(Constants.VKONTAKTE_GET_FRIENDS_INFO_METHOD)?PARAMETERS&access_token=\(accessToken)&fields=city,domain,contacts,bdate,photo_50&v=5.73"
-    
+        
         webClient.getRequestWithUrl(url: getProfileUrl, completionHandler: { (response) in
-          
-            let value = response.value as? [String:Any]
-            if (value?.keys.contains("error")) != nil {
-                self.removeVkFromCoreData()
-            } else {
+            
+            
+            if let value = response.value as? [String:Any] {
+                if let error = value["error"] as? [String:Any] {
+                    if let errorCode = error["error_code"] as? Int {
+                        if (errorCode == 5) {
+                            let coredataman = CoreDataManager()
+                            coredataman.removeElement(type: Constants.TYPE_VKONTAKTE)
+                        }
+                    } else {
+                        print(error)
+                    }
+                }
+                if (value["response"] as? [String:Any]) != nil {
+                    
+                    if let resultDictResponse: Dictionary<String,Any> = value["response"] as? Dictionary<String, Any> {
+                        let items = resultDictResponse["items"] ?? []
+                        completionHandlerFirst(items)
+                        return;
+                    }
+                }
                 completionHandlerFirst([])
-                return;  
-            }
-            if let resultDictResponse: Dictionary<String,Any> = value!["response"] as? Dictionary<String, Any> {
-                let items = resultDictResponse["items"] ?? []
-                completionHandlerFirst(items)
             } else {
                 completionHandlerFirst([])
             }

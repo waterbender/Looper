@@ -56,9 +56,6 @@
 		EFB6FFF4204ECA350050324E /* VKontakteSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6FFF1204ECA350050324E /* VKontakteSynchronizer.swift */; };
 		EFB6FFF5204ECACD0050324E /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4ADE5A204DBA04002443FD /* WebClient.swift */; };
 		EFB6FFF6204ECACE0050324E /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4ADE5A204DBA04002443FD /* WebClient.swift */; };
-		EFB6FFF8204EE63F0050324E /* UserDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6FFF7204EE63F0050324E /* UserDataObject.swift */; };
-		EFB6FFF9204EE63F0050324E /* UserDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6FFF7204EE63F0050324E /* UserDataObject.swift */; };
-		EFB6FFFA204EE63F0050324E /* UserDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6FFF7204EE63F0050324E /* UserDataObject.swift */; };
 		EFDE723A2051A50200AB1615 /* VkontakteUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE72392051A50200AB1615 /* VkontakteUserTableViewCell.swift */; };
 		EFDE723B2051A50200AB1615 /* VkontakteUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE72392051A50200AB1615 /* VkontakteUserTableViewCell.swift */; };
 		EFDE723C2051A50200AB1615 /* VkontakteUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE72392051A50200AB1615 /* VkontakteUserTableViewCell.swift */; };
@@ -120,7 +117,6 @@
 		EFA399B620518FDF00FE8E96 /* VKontacteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKontacteViewController.swift; sourceTree = "<group>"; };
 		EFB6FFED204EC34F0050324E /* ClientInfoObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientInfoObject.swift; sourceTree = "<group>"; };
 		EFB6FFF1204ECA350050324E /* VKontakteSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKontakteSynchronizer.swift; sourceTree = "<group>"; };
-		EFB6FFF7204EE63F0050324E /* UserDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataObject.swift; sourceTree = "<group>"; };
 		EFDE72392051A50200AB1615 /* VkontakteUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkontakteUserTableViewCell.swift; sourceTree = "<group>"; };
 		EFF9F5AB2052B17700F84D8C /* RemindersHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -271,7 +267,6 @@
 			isa = PBXGroup;
 			children = (
 				EFB6FFED204EC34F0050324E /* ClientInfoObject.swift */,
-				EFB6FFF7204EE63F0050324E /* UserDataObject.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -624,7 +619,6 @@
 				EF03E5552051F1FD00245F00 /* ContactsHelper.swift in Sources */,
 				EF03E5512051E7F500245F00 /* SynchronizationViewController.swift in Sources */,
 				EFB6FFF2204ECA350050324E /* VKontakteSynchronizer.swift in Sources */,
-				EFB6FFF8204EE63F0050324E /* UserDataObject.swift in Sources */,
 				EFF9F5AC2052B17700F84D8C /* RemindersHelper.swift in Sources */,
 				EF1A6197204F1AE60081EE95 /* FriendListViewConroller.swift in Sources */,
 				EFA399B720518FDF00FE8E96 /* VKontacteViewController.swift in Sources */,
@@ -653,7 +647,6 @@
 				EF0524C6204E12C800F1EB7F /* LauncherModel.swift in Sources */,
 				EFB6FFDC204EBAA10050324E /* AppDelegate.swift in Sources */,
 				EFB6FFD8204EB9CB0050324E /* CoreDataManager.swift in Sources */,
-				EFB6FFF9204EE63F0050324E /* UserDataObject.swift in Sources */,
 				EF03E5562051F1FD00245F00 /* ContactsHelper.swift in Sources */,
 				EF0524CC204E211D00F1EB7F /* Constants.swift in Sources */,
 			);
@@ -677,7 +670,6 @@
 				EF0524C7204E12C800F1EB7F /* LauncherModel.swift in Sources */,
 				EFB6FFDD204EBAA20050324E /* AppDelegate.swift in Sources */,
 				EFB6FFD9204EB9CB0050324E /* CoreDataManager.swift in Sources */,
-				EFB6FFFA204EE63F0050324E /* UserDataObject.swift in Sources */,
 				EF03E5572051F1FD00245F00 /* ContactsHelper.swift in Sources */,
 				EF0524CD204E211E00F1EB7F /* Constants.swift in Sources */,
 			);

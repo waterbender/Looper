@@ -68,54 +68,77 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxR-we-gfF">
                                 <rect key="frame" x="0.0" y="116" width="375" height="502"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="if_user-boss_34294" translatesAutoresizingMaskIntoConstraints="NO" id="YHp-ny-krJ">
-                                        <rect key="frame" x="139.5" y="90" width="97" height="118"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gFe-t5-FSJ">
+                                        <rect key="frame" x="40" y="53" width="296" height="397"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrr-tI-gdA">
+                                                <rect key="frame" x="48" y="248" width="200" height="50"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Axe-EW-tZH"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="yRj-99-9MK"/>
+                                                </constraints>
+                                                <state key="normal" title="LOGIN">
+                                                    <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="if_user-boss_34294" translatesAutoresizingMaskIntoConstraints="NO" id="YHp-ny-krJ">
+                                                <rect key="frame" x="99" y="99" width="97" height="118"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="118" id="7Qr-Wk-fWz"/>
+                                                    <constraint firstAttribute="width" constant="97" id="jCf-V5-Sjh"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вконтакте" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9B-1S-wxq">
+                                                <rect key="frame" x="76" y="32" width="144" height="40"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="fPl-Tg-SN3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="30"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.076029349659999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="118" id="7Qr-Wk-fWz"/>
-                                            <constraint firstAttribute="width" constant="97" id="jCf-V5-Sjh"/>
+                                            <constraint firstItem="YHp-ny-krJ" firstAttribute="top" secondItem="v9B-1S-wxq" secondAttribute="bottom" constant="27" id="1xp-PT-FbA"/>
+                                            <constraint firstItem="vrr-tI-gdA" firstAttribute="centerX" secondItem="gFe-t5-FSJ" secondAttribute="centerX" id="VsB-gm-sGv"/>
+                                            <constraint firstItem="v9B-1S-wxq" firstAttribute="top" secondItem="gFe-t5-FSJ" secondAttribute="top" constant="32" id="d3L-36-YP2"/>
+                                            <constraint firstItem="vrr-tI-gdA" firstAttribute="top" secondItem="YHp-ny-krJ" secondAttribute="bottom" constant="31" id="gLo-pD-gKh"/>
+                                            <constraint firstAttribute="width" secondItem="gFe-t5-FSJ" secondAttribute="height" multiplier="278:353" constant="-16.651558073654428" id="ruM-3s-zjS"/>
+                                            <constraint firstItem="v9B-1S-wxq" firstAttribute="centerX" secondItem="gFe-t5-FSJ" secondAttribute="centerX" id="uaN-nZ-JGx"/>
+                                            <constraint firstItem="YHp-ny-krJ" firstAttribute="centerX" secondItem="gFe-t5-FSJ" secondAttribute="centerX" id="ujv-uk-MlI"/>
                                         </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вконтакте" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9B-1S-wxq">
-                                        <rect key="frame" x="116.5" y="30" width="143.5" height="40"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <bool key="isElement" value="NO"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="fPl-Tg-SN3"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="30"/>
-                                        <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.076029349659999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <size key="shadowOffset" width="0.0" height="0.0"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrr-tI-gdA">
-                                        <rect key="frame" x="103" y="237" width="169" height="50"/>
-                                        <color key="backgroundColor" red="0.9767052531" green="0.60546392199999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Axe-EW-tZH"/>
-                                        </constraints>
-                                        <state key="normal" title="LOGIN">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                <color key="value" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                    </button>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="YHp-ny-krJ" firstAttribute="top" secondItem="v9B-1S-wxq" secondAttribute="bottom" constant="20" id="BCh-mf-4j7"/>
-                                    <constraint firstItem="v9B-1S-wxq" firstAttribute="centerX" secondItem="rxR-we-gfF" secondAttribute="centerX" id="JJ6-sR-8af"/>
-                                    <constraint firstItem="vrr-tI-gdA" firstAttribute="centerX" secondItem="rxR-we-gfF" secondAttribute="centerX" id="Pvg-bC-Otq"/>
-                                    <constraint firstItem="v9B-1S-wxq" firstAttribute="centerX" secondItem="rxR-we-gfF" secondAttribute="centerX" id="RjC-uW-f1q"/>
-                                    <constraint firstItem="YHp-ny-krJ" firstAttribute="centerX" secondItem="rxR-we-gfF" secondAttribute="centerX" id="SFv-EZ-GoJ"/>
-                                    <constraint firstItem="v9B-1S-wxq" firstAttribute="top" secondItem="rxR-we-gfF" secondAttribute="top" constant="30" id="UzN-Ww-xfJ"/>
-                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="vrr-tI-gdA" secondAttribute="trailing" constant="103" id="cY3-OD-fDt"/>
-                                    <constraint firstItem="vrr-tI-gdA" firstAttribute="top" secondItem="YHp-ny-krJ" secondAttribute="bottom" constant="29" id="qYP-Er-6TY"/>
-                                    <constraint firstItem="vrr-tI-gdA" firstAttribute="leading" secondItem="rxR-we-gfF" secondAttribute="leading" constant="103" id="ygI-VQ-UYo"/>
+                                    <constraint firstItem="gFe-t5-FSJ" firstAttribute="width" relation="lessThanOrEqual" secondItem="rxR-we-gfF" secondAttribute="width" id="4hy-am-1jO"/>
+                                    <constraint firstItem="gFe-t5-FSJ" firstAttribute="height" relation="lessThanOrEqual" secondItem="rxR-we-gfF" secondAttribute="height" id="4k2-7t-Eed"/>
+                                    <constraint firstItem="gFe-t5-FSJ" firstAttribute="width" secondItem="rxR-we-gfF" secondAttribute="width" priority="700" constant="-79" id="RYK-T4-IKD"/>
+                                    <constraint firstItem="gFe-t5-FSJ" firstAttribute="centerY" secondItem="rxR-we-gfF" secondAttribute="centerY" constant="0.5" id="e3O-7x-81D"/>
+                                    <constraint firstItem="gFe-t5-FSJ" firstAttribute="centerX" secondItem="rxR-we-gfF" secondAttribute="centerX" id="z9d-Ub-5kB"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -145,7 +168,7 @@
                     </connections>
                 </barButtonItem>
             </objects>
-            <point key="canvasLocation" x="-260" y="116"/>
+            <point key="canvasLocation" x="-260" y="115.59220389805098"/>
         </scene>
         <!--Friend List View Conroller-->
         <scene sceneID="0U2-GT-hPj">

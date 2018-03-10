@@ -87,7 +87,14 @@ struct CoreDataManager {
         fetchRequest.predicate = NSPredicate(format: "typeOfRequest = %@", type)
         
         if let result = try? self.mainManagedObjectContext()?.fetch(fetchRequest) {
-            self.mainManagedObjectContext()?.delete((result?.first)!)
+            if let contactObject = result?.first {
+                self.mainManagedObjectContext()?.delete(contactObject)
+                do {
+                    try self.mainManagedObjectContext()?.save()
+                } catch let error as NSError {
+                    print("Error: \(error.localizedDescription)")
+                }
+            }
         }
     }
     
