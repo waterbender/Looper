@@ -56,8 +56,8 @@ class FriendListViewConroller: UIViewController {
         self.reloadSelf {
         }
         
-        let calendar = EKEventStore().defaultCalendarForNewReminders()
-        RemindersHelper().removeListWithCalendar(calendar: calendar!)
+//        let calendar = EKEventStore().defaultCalendarForNewReminders()
+//        RemindersHelper().removeListWithCalendar(calendar: calendar!)
     }
     
     override func didReceiveMemoryWarning() {

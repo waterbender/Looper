@@ -49,11 +49,14 @@ struct VKontakteSynchronizer {
     
         webClient.getRequestWithUrl(url: getProfileUrl, completionHandler: { (response) in
           
-            let value = response.value as! [String:Any]
-            if (value.keys.contains("error")) {
+            let value = response.value as? [String:Any]
+            if (value?.keys.contains("error")) != nil {
                 self.removeVkFromCoreData()
+            } else {
+                completionHandlerFirst([])
+                return;  
             }
-            if let resultDictResponse: Dictionary<String,Any> = value["response"] as? Dictionary<String, Any> {
+            if let resultDictResponse: Dictionary<String,Any> = value!["response"] as? Dictionary<String, Any> {
                 let items = resultDictResponse["items"] ?? []
                 completionHandlerFirst(items)
             } else {
