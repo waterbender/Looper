@@ -15,6 +15,22 @@ class VkontakteUserTableViewCell: UITableViewCell {
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var userIconImageView: UIImageView!
    
+    func fillCellWithUser(user: [String:Any]) {
+        
+        self.nameLabel.text = ("\(user["first_name"]!) \(user["last_name"]!)")
+        let phone = user["mobile_phone"] ?? ""
+        self.numLabel.text = ("\(phone)")
+        self.userIconImageView.image = nil
+        self.userIconImageView.sd_setImage(with: URL(string: (user["photo_50"] as! String)), placeholderImage: UIImage())
+        
+        if let dictLocation = user["city"] as? [String:Any] {
+            self.addressLabel.text = (dictLocation["title"] ?? "") as? String
+        } else {
+            self.addressLabel.text = ""
+        }
+        
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

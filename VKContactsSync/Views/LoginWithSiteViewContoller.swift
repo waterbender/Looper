@@ -57,8 +57,8 @@ extension LoginWithSiteViewContoller {
         
         let launch = LauncherModel()
         if let urlString = navigationAction.request.url {
-            launch.recordIfNeedded(url: urlString.absoluteString, compileHendler: {
-                self.dismiss(animated: true, completion: nil)
+            launch.recordIfNeedded(url: urlString.absoluteString, compileHendler: { [weak self] in
+                self?.dismiss(animated: true, completion: nil)
             })
         }
         

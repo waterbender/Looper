@@ -17,7 +17,7 @@ class FriendListViewConroller: UIViewController {
     
     @IBOutlet weak var activityIndicatorView: NVActivityIndicatorView!
     @IBOutlet weak var firendListTableView: UITableView!
-    var arrayOfUsers = [Any]()
+    let vkModel = VKViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,13 +66,13 @@ class FriendListViewConroller: UIViewController {
     }
     
     func reloadSelf(compliteHeader:@escaping ()->()) {
-        let vkModel = VKViewModel()
-        vkModel.getUsers(complitedHandler: { (array) in
+        
+        vkModel.getUsers(complitedHandler: { [weak self] (array) in
             let result = array
-            self.arrayOfUsers = result.first as! [Any]
+            self?.vkModel.arrayOfUsers = result.first as! [Any]
             DispatchQueue.main.async {
-                self.firendListTableView.reloadData()
-                self.activityIndicatorView.stopAnimating()
+                self?.firendListTableView.reloadData()
+                self?.activityIndicatorView.stopAnimating()
                 compliteHeader()
             }
         })
@@ -92,24 +92,14 @@ class FriendListViewConroller: UIViewController {
 
 extension FriendListViewConroller: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayOfUsers.count
+        return vkModel.arrayOfUsers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellVkUserIdentifier) as! VkontakteUserTableViewCell
-        let user = arrayOfUsers[indexPath.row] as! [String:Any]
-        cell.nameLabel.text = ("\(user["first_name"]!) \(user["last_name"]!)")
-        let phone = user["mobile_phone"] ?? ""
-        cell.numLabel.text = ("\(phone)")
-        cell.userIconImageView.image = nil
-        cell.userIconImageView.sd_setImage(with: URL(string: (user["photo_50"] as! String)), placeholderImage: UIImage())
-        
-        if let dictLocation = user["city"] as? [String:Any] {
-            cell.addressLabel.text = (dictLocation["title"] ?? "") as? String
-        } else {
-            cell.addressLabel.text = ""
-        }
+        let user = self.vkModel.arrayOfUsers[indexPath.row] as! [String:Any]
+        cell.fillCellWithUser(user: user)
         
         return cell
     }
@@ -136,13 +126,13 @@ extension FriendListViewConroller: SyncDelegate {
         let helper = ContactsHelper()
         let queue = OperationQueue()
         queue.addOperation {
-            DispatchQueue.main.async {
-                self.activityIndicatorView.startAnimating()
+            DispatchQueue.main.async { [weak self] in
+                self?.activityIndicatorView.startAnimating()
                 UIApplication.shared.beginIgnoringInteractionEvents()
             }
-            helper.addContactsToList(array: (self.arrayOfUsers), complitedHandle: {
-                DispatchQueue.main.async {
-                    self.activityIndicatorView.stopAnimating()
+            helper.addContactsToList(array: (self.vkModel.arrayOfUsers), complitedHandle: {
+                DispatchQueue.main.async { [weak self] in
+                    self?.activityIndicatorView.stopAnimating()
                     UIApplication.shared.endIgnoringInteractionEvents()
                 }
             })
@@ -151,14 +141,14 @@ extension FriendListViewConroller: SyncDelegate {
     func syncReminders() {
         let helper = RemindersHelper()
         let queue = OperationQueue()
-        queue.addOperation {
+        queue.addOperation { [weak self] in
             DispatchQueue.main.async {
-                self.activityIndicatorView.startAnimating()
+                self?.activityIndicatorView.startAnimating()
                 UIApplication.shared.beginIgnoringInteractionEvents()
             }
-            helper.addRemindersToList(array: (self.arrayOfUsers), complitedHandle: {
+            helper.addRemindersToList(array: (self?.vkModel.arrayOfUsers)!, complitedHandle: {
                 DispatchQueue.main.async {
-                    self.activityIndicatorView.stopAnimating()
+                    self?.activityIndicatorView.stopAnimating()
                     UIApplication.shared.endIgnoringInteractionEvents()
                 }
             })

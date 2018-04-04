@@ -10,6 +10,8 @@ import UIKit
 
 class VKViewModel {
 
+    var arrayOfUsers = [Any]()
+    
     func getUsers(complitedHandler: @escaping ([Any])->()) {
         let synchronizer = VKontakteSynchronizer()
         let accessToken = synchronizer.getAccessTokenForVk()
